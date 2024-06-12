@@ -1,0 +1,103 @@
+/* 
+------------------------------------------------------
+    Global Styles
+------------------------------------------------------
+*/
+/*color*/
+:root {
+      --purple-color: #48126A;
+      --black-color: #000000;
+      --white-color: #ffffff;
+      --text-color: #333;
+      --gray-color: #D9D9D9;
+  }
+/* Reset CSS */
+/* @import url("format.css"); */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+body, html {
+
+      margin: 0;
+      padding: 0;
+  }
+.container{
+      max-width: 1440px; /* Độ rộng tối đa là 1440px */
+      margin: 0 auto; /* Căn giữa trang */
+      padding: 0 0px; 
+      box-sizing: border-box;
+
+}
+/* Common styles for headings */
+h1 {
+    color: var(--text-color);
+    font-size: 24px;
+}
+
+h2 {
+    color: var(--text-color);
+    font-size: 20px;
+}
+
+h3 {
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+/* Common styles for links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 
+------------------------------------------------------
+    Component Styles
+------------------------------------------------------
+*/
+
+/* Header Styles */
+header {
+      position: fixed;
+      background-color: var(--purple-color);
+      color: white;
+      text-align: center;
+      top: 0;
+      padding: 1em;
+      width: 16em;
+      height:100%;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--text-color);
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* 
+------------------------------------------------------
+    Specific Page Styles
+------------------------------------------------------
+*/
+
+/* Styles specific to a particular page */
+
+
+/* 
+------------------------------------------------------
+    Media Queries
+------------------------------------------------------
+*/
+
+/* Media queries for responsive design */

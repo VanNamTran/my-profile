@@ -1,0 +1,27 @@
+/* General Styles */
+@import url(format.css);
+body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+  }
+  
+  /* Header Styles */
+  .avatar {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 5px solid white;
+      object-fit: cover;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 15px;
+  }
+  .name{
+      font-size: 25px;
+  }
+  /* Main Content Styles */
+  main {
+      padding: 1em;
+  }
+  
+  
