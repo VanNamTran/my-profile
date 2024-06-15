@@ -1,0 +1,251 @@
+[
+      {
+            "id": "001",
+            "name": "SAP ERP",
+            "image": "saplogo.png",
+            "field": [
+                  "technology",
+                  "economic"
+            ]
+      },
+      {
+            "id": "002",
+            "name": "Business Intelligence",
+            "image": "BI.jpeg",
+            "field": [
+                  "technology",
+                  "economic"
+            ]
+      },
+      {
+            "id": "003",
+            "name": "Business Analyst",
+            "image": "ba.jpeg",
+            "field": [
+                  "technology",
+                  "economic"
+            ]
+      },
+      {
+            "id": "004",
+            "name": "Security",
+            "image": "security.jpeg",
+            "field": [
+                  "technology"
+            ]
+      },
+      {
+            "id": "005",
+            "name": "Internet",
+            "image": "internet.jpeg",
+            "field": [
+                  "technology"
+            ]
+      },
+      {
+            "id": "006",
+            "name": "Cloud",
+            "image": "cloud.jpeg",
+            "field": [
+                  "technology"
+            ]
+      },
+      {
+            "id": "007",
+            "name": "Website",
+            "image": "website.jpeg",
+            "field": [
+                  "technology"
+            ]
+      },
+      {
+            "id": "008",
+            "name": "Desktop App",
+            "image": "desktop.jpg",
+            "field": [
+                  "technology"
+            ]
+      },
+      {
+            "id": "009",
+            "name": "Android App",
+            "image": "android.jpg",
+            "field": [
+                  "technology"
+            ]
+      },
+      {
+            "id": "010",
+            "name": "SQL",
+            "image": "sql.jpg",
+            "field": [
+                  "technology"
+            ]
+      },
+      {
+            "id": "011",
+            "name": "Python",
+            "image": "python.png",
+            "field": [
+                  "technology"
+            ]
+      },
+      {
+            "id": "012",
+            "name": "Java",
+            "image": "java.jpeg",
+            "field": [
+                  "technology"
+            ]
+      },
+      {
+            "id": "013",
+            "name": "Angular",
+            "image": "angular.png",
+            "field": [
+                  "technology"
+            ]
+      },
+      {
+            "id": "014",
+            "name": "Electron",
+            "image": "elecrton.png",
+            "field": [
+                  "technology"
+            ]
+      },
+      {
+            "id": "015",
+            "name": "React Native",
+            "image": "reactnative.jpeg",
+            "field": [
+                  "technology"
+            ]
+      },
+      {
+            "id": "016",
+            "name": "Web Crawling",
+            "image": "webscrawling.webp",
+            "field": [
+                  "technology"
+            ]
+      },
+      {
+            "id": "017",
+            "name": "Docker",
+            "image": "docker.png",
+            "field": [
+                  "technology"
+            ]
+      },
+      {
+            "id": "018",
+            "name": "Agile/Scrum",
+            "image": "agile.jpeg",
+            "field": [
+                  "technology",
+                  "managerment"
+            ]
+      },
+      {
+            "id": "019",
+            "name": "BlockChain",
+            "image": "blockchain.jpg",
+            "field": [
+                  "technology"
+            ]
+      },
+      {
+            "id": "020",
+            "name": "Big Data",
+            "image": "bigdata.jpeg",
+            "field": [
+                  "technology"
+            ]
+      },
+      {
+            "id": "021",
+            "name": "AI(artificial intelligence)",
+            "image": "artificial_intelligence.jpeg",
+            "field": [
+                  "technology"
+            ]
+      },
+      {
+            "id": "022",
+            "name": "Physic Basic",
+            "image": "physics.jpg",
+            "field": [
+                  "science"
+            ]
+      },
+      {
+            "id": "023",
+            "name": "Math",
+            "image": "math.jpg",
+            "field": [
+                  "science"
+            ]
+      },
+      {
+            "id": "024",
+            "name": "Chemistry Basic",
+            "image": "chemical.jpeg",
+            "field": [
+                  "technology",
+                  "managerment"
+            ]
+      },
+      {
+            "id": "025",
+            "name": "Luật Doanh Nghiệp 2024",
+            "image": "ldn.jpeg",
+            "field": [
+                  "law",
+                  "economic"
+            ]
+      },
+      {
+            "id": "026",
+            "name": "Accounting",
+            "image": "accounting.jpeg",
+            "field": [
+                  "economic"
+            ]
+      },
+      {
+            "id": "027",
+            "name": "Statistic",
+            "image": "statistic.jpg",
+            "field": [
+                  "science"
+            ]
+      },
+      {
+            "id": "028",
+            "name": "PowerPoint",
+            "image": "powerpoint.jpg",
+            "field": [
+                  "technology",
+                  "Graphics"
+            ]
+      },
+      {
+            "id": "029",
+            "name": "Excel",
+            "image": "excel.jpg",
+            "field": [
+                  "technology"
+            ]
+      },
+      {
+            "id": "030",
+            "name": "Figma",
+            "image": "figma.jpeg",
+            "field": [
+                  "technology",
+                  "Graphics"
+            ]
+      }
+
+]

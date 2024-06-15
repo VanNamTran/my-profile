@@ -1,6 +1,5 @@
 /* 
 ------------------------------------------------------
-    Global Styles
 ------------------------------------------------------
 */
 /*color*/
@@ -28,6 +27,8 @@ body, html {
       margin: 0 auto; /* Căn giữa trang */
       padding: 0 0px; 
       box-sizing: border-box;
+      display: flex;
+      position: relative;
 
 }
 /* Common styles for headings */
@@ -72,6 +73,10 @@ header {
       padding: 1em;
       width: 16em;
       height:100%;
+}
+main {
+    margin-left: 19em;
+    max-width: 1100px;
 }
 
 /* Footer Styles */

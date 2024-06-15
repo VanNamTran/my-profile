@@ -20,22 +20,129 @@
                   </div>
                   <hr>
                   <nav>
-                        <ui>
-                              <li><div href="#dđ">Application Profile</div></li>
-                              <li><div href="#dđ">Knowledge sharing</div></li>
-                              <li><div href="#dđ">Blog</div></li>
-                        </ui>
-                  </nav>
+                        <ul>
+                            <li class="active">
+                                <a href="#">
+                                    <img src="./images/resume_white.png" alt="resume" class="icon icon-default">
+                                    <img src="./images/resume_black.png" alt="resume" class="icon icon-active">
+                                    Application Profile
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./knowledge_sharing.html">
+                                    <img src="./images/knowledge_white.png" alt="knowledge" class="icon icon-default">
+                                    <img src="./images/knowledge_black.png" alt="knowledge" class="icon icon-active">
+                                    Knowledge sharing
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./blog.html">
+                                    <img src="./images/blogger_white.png" alt="blog" class="icon icon-default">
+                                    <img src="./images/blogger_black.png" alt="blog" class="icon icon-active">
+                                    Blog
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
             </header>
             <main>
+                  <h2>Application Profile</h2>
+                  <hr>
+                  <br>
                   <section class="about-me">
+                        <div class="avatar-box">
+                              <div class="avatar-box-name">
+                                    <img style="width: 150px; " src="./images/Avatar.png" alt="avatar" class="my-avatar">
+                                    <div style="text-align: center;">
+                                          <h1>Trần Văn Nam</H1>
+                                          <p >STUDENT OF UNIVERSITY OF  </br>ECONOMICS AND LAW</p>
+                                          <p>2020 - 2024</p>
+                                    </div>
+                              </div>
+                              <div class="about-me-info">
+                                    <h2>About me</h2>
+                                    <span>DoB: 03/08/2002</span>
+                                    <p>Iam looking for a job</p>
+                              </div>
 
+                        </div>
+                        <div class="contact-box">
+                              <p>Contact</p>
+                              <hr>
+                              <br>
+                              <div class="contact-box-info">
+                                    <img src="./images/gmail.png" alt="mail">
+                                    <p>Email: <a href="mailto:tranvannamntt@gmail.com"> <br>tranvannamntt@gmail.com</a></p>
+                              </div>
+                              <div class="contact-box-info">
+                                    <img src="./images/whatapp.png" alt="mail">
+                                    <p>Phone number </br>0366 187 296</p>
+                              </div>
+                              <div class="contact-box-info">
+                                    <img src="images/github.png" alt="mail">
+                                    <p>GitHub </br><a href="https://github.com/VanNamTran" target="_blank">https://github.com/VanNamTran</a></p>
+                              </div>
+                        </div>
+                        
                   </section>
                   <section class="my-knowledge">
+                        <div class="my-skills">  
+                              <h1>Knowledge</h1>
+                              <hr>
+                              <ul>
+                                    <li><b>Front-end:</b> HTML, CSS, Javascript, Typescript</li>
+                                    <li><b>Back-end:</b> Python, Java, Javascript</li>
+                                    <li><b>Database:</b> MongoDB, Microsoft SQL Server, Fire Base</li>
+                                    <li> </li>
+                                    <li><b>Automation test:</b> Selenium, Python</li>
+                                    <li><b>GitHub, GitLap</b></li>
+                                    <li><b>Business analytics</b></li>
+                                    <li><b>Business Intelligence</b></li>
+                                    <li><b>SAP ERP</b></li>
+                              </ul>
+                        </div>
+                        <div class="my-experience">
+                              <div class="certificate">
+                                    <div class="certificate-info">
+                                          <h2>Experience</h2>
+                                          <h3>QT-Data Inc, Technology Internship</h3>
+                                          <span>03/2023 - 06/2023</span>
+                                          <ul>
+                                                <li>Crawl data</li>
+                                                <li>Write automation tool</li>
+                                                <li>Update working system</li>
+                                          </ul>
+                                    </div>
+                                    <div class="certificate-image">
+                                          <h2>Certificate</h2>
+                                          <img id="myImg" style="width: 150px;" src="./images/Certificate.png" alt="Certificate of intership">
+                                    </div>
+                                    <div id="myModal" class="modal">
 
+                                          <span class="close">&times;</span>
+                                        
+                                          <img class="modal-content" id="img01">
+                                        
+                                          <div id="caption"></div>
+                                        </div>
+                              </div>
+                              <div class="my-projects">
+                                    <div class="my-project project-web">
+
+                                    </div>
+                                    <div class="my-project project-app">
+
+                                    </div>
+                                    <div class="my-project project-destop">
+
+                                    </div>
+                              </div>
+                        </div>
                   </section>
 
             </main>
       </div>
+      <script src="/js/functions.js">
+      </script>
 </body>
 </html>

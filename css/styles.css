@@ -19,9 +19,226 @@ body {
   .name{
       font-size: 25px;
   }
-  /* Main Content Styles */
-  main {
-      padding: 1em;
+  /* --Nav-- */
+
+nav{
+  position: absolute;
+  right: 0;
+  width: 17em;
+}
+
+nav ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+nav li {
+    margin: 10px 0; 
+    padding: 0;
+}
+
+nav a {
+    display: flex; 
+    align-items: center; 
+    text-decoration: none; 
+    color: #fff; 
+    padding: 10px; 
+    background-color: #6a0dad; 
+    border-radius: 10px 0 0 10px; 
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+nav img {
+    margin-right: 10px;
+    width: 35px;
+}
+nav a .icon-active {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s; 
+}
+
+nav li.active a {
+  background-color: #ffffff; 
+  color: #000; 
+}
+
+nav li.active a .icon-default {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+nav li.active a .icon-active {
+  display: block;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+nav img.icon {
+  margin-right: 10px; /* Khoảng cách giữa hình ảnh và văn bản */
+  width: 24px; /* Kích thước của các biểu tượng */
+  height: 24px; /* Kích thước của các biểu tượng */
+}
+
+
+  .about-me{
+    background-color: var(--gray-color);
+    display: flex;
+    padding: 10px;
+    margin: 0 10px 0 0; 
+    border-radius: 10px;
+  }
+  .avatar-box-name{
+    display: flex;
+  }
+  .avatar-box-name img{
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .my-avatar{
+    margin: 0 10px 0 0; 
+  }
+  .avatar-box, .contact-box {
+    flex: 1;
+}
+  .contact-box-info{
+    display: flex;
+    align-items: center;
+    padding: 5px 0 5px 0;
+  }
+  .contact-box-info img{
+    margin: 0 10px 0 0;
+    width: 40px;
+    height: 40px;
+  }
+
+/* ------------ My-knowledge-------- */
+
+.my-knowledge{
+    display: flex;
+    margin: 10px 0 0 0;
+    width: 100%;
+}
+.my-skills{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--gray-color);
+}
+.certificate{
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0px 10px 0 10px;
+    background-color: var(--gray-color);
+}
+.certificate-info {
+    flex :0.7
+    ;
+}
+.my-projects{
+    display: flex;
+}
+.my-project{
+    width: 190px;
+    height: 290px;
+    padding: 10px;
+    margin: 10px 10px 0 10px;
+    background-color: blueviolet;
+    border-radius: 10px;
+}
+ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Đảm bảo padding và border không làm tăng chiều rộng phần tử */
+    list-style-type: none; /* Bỏ các dấu chấm ở đầu mỗi dòng */
+}
+li {
+    padding: 5px;
+}
+/* Tùy chọn: định dạng các mục cuối cùng không có đường kẻ dưới */
+li:last-child {
+    border-bottom: none;
+}
+/* -------mycetificate-------- */
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
   }
   
+  #myImg:hover {opacity: 0.7;}
   
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
