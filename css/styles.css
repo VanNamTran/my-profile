@@ -284,6 +284,32 @@ li:last-child {
   }
 }
 
+/*--------- project video -------- */
+.youtube-player-overlay{
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  pointer-events: none;
+}
+.youtube-player-overlay.active2{
+  opacity: 1;
+  pointer-events: auto;
+}
+.my-project-video{
+  position: fixed;
+  width: 80%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  transition: all 0.4 ease;
+}
+.youtube-player-overlay.active2 .my-project-video{
+  transform: translate(-50%,0);
+}
+.my-project-video iframe{
+  width: 100%;
+  aspect-ratio: 16/9;
+}
 /*------------ knowledsharing-------- */
 .grid-container {
   display: grid;

@@ -25,3 +25,17 @@ document.addEventListener("DOMContentLoaded", function() {
       });
   });
 });
+// youtube-player
+var YTPlayerOverlay = document.querySelector(".youtube-player-overlay");
+var YTLinks =document.querySelectorAll(".my-project");
+var YTPlayerPupup = document.querySelector(".my-project-video iframe");
+YTLinks.forEach((link)=>{
+  link.addEventListener("click",()=>{
+    YTPlayerOverlay.classList.add("active2");
+    let videoLink =`https://www.youtube.com/embed/${link.dataset.link}`;
+    YTPlayerPupup.src = videoLink;
+  });
+});
+YTPlayerOverlay.addEventListener("click",()=>{
+  YTPlayerOverlay.classList.remove("active2");
+})
