@@ -192,8 +192,7 @@
             "name": "Chemistry Basic",
             "image": "chemical.jpeg",
             "field": [
-                  "technology",
-                  "managerment"
+                  "science"
             ]
       },
       {
@@ -216,7 +215,7 @@
       {
             "id": "027",
             "name": "Statistic",
-            "image": "statistic.jpg",
+            "image": "statistics.jpg",
             "field": [
                   "science"
             ]
