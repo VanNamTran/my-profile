@@ -31,12 +31,12 @@ header {
 .name {
   font-size: 25px;
 }
-/* scroll to top */
+/* ---- scroll to top ----- */
 #scrollToTopBtn {
   display: none;
   position: fixed;
   bottom: 20px;
-  right: 30px;
+  right: 20px;
   z-index: 99;
   font-size: 18px;
   border: none;
@@ -44,15 +44,58 @@ header {
   background-color: var(--purple-color);
   color: white;
   cursor: pointer;
-  padding: 15px;
+  padding: 10px;
   border-radius: 10px;
 }
 
 #scrollToTopBtn:hover {
   background-color: var(--purple-color-light);
 }
+/*----- menu ---- */
+#menu {
+  display:none;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: var(--purple-color);
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+}
 
-/* --Nav-- */
+#menu:hover {
+  background-color: var(--purple-color-light);
+}
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none; 
+  z-index: 999;
+}
+
+#overlay.show {
+  display: block; 
+}
+#closeMenu{
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+/* ---- Nav ---- */
 
 nav {
   position: absolute;
@@ -335,6 +378,7 @@ li:last-child {
   .modal-content {
     width: 100%;
   }
+  
 }
 
 /*--------- project video -------- */
@@ -362,6 +406,12 @@ li:last-child {
 .my-project-video iframe{
   width: 100%;
   aspect-ratio: 16/9;
+}
+@media only screen and (max-width: 700px) {
+  .my-project-video {
+    width: 100%;
+  }
+  
 }
 /*------------ knowledsharing-------- */
 .grid-container {
@@ -443,6 +493,9 @@ li:last-child {
     font-weight: bold;
     font-size: 20px;
   }
+  #overlay{
+    display: none;
+  }
 }
 /* ========== << 500 px ========== */
 @media screen and (max-width:500px){
@@ -450,8 +503,18 @@ li:last-child {
     left: -300px;
     color: white;
     padding: 1em;
-    z-index: 100;
+    z-index: 1000;
+    transition: left 0.3s;
+}
 
+header.show {
+  left: 0; 
+}
+header.closemenu{
+  left: -300px;
+}
+#menu{
+  display: block;
 }
 
 main {

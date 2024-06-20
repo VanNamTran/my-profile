@@ -49,7 +49,9 @@
                         </ul>
                   </nav>
             </header>
+            <div id="overlay"><span id="closeMenu">&times;</span></div>
             <button id="scrollToTopBtn" title="Go to top">Top</button>
+            <button id="menu" title="Menu"><img src="images/menu.png" alt="" style="width: 25px;"></button>
             <main>
                   <h2>Application Profile</h2>
                   <hr>
@@ -103,8 +105,8 @@
                                     <li><b>Database:</b> MongoDB, Microsoft SQL Server, Fire Base</li>
                                     <li> </li>
                                     <li><b>Automation test:</b> Selenium, Python</li>
-                                    <li><b>GitHub, GitLap</b></li>
-                                    <li><b>Business analytics</b></li>
+                                    <li><b>GitHub</b></li>
+                                    <li><b>Business Analytics</b></li>
                                     <li><b>Business Intelligence</b></li>
                                     <li><b>SAP ERP</b></li>
                               </ul>
@@ -124,7 +126,7 @@
                                     <div class="certificate-image">
                                           <h2>Certificate</h2>
                                           <img id="myImg" style="width: 150px;" src="./images/Certificate.png"
-                                                alt="Certificate of intership">
+                                                alt="Certificate of internship">
                                     </div>
                                     <div id="myModal" class="modal">
 
@@ -137,17 +139,18 @@
                               </div>
                               <div class="my-projects">
                                     <div class="my-project project-web" data-link="A7KbTRqA-fk?si=70fMYRsKQHdCNGCC"
-                                    style="background-image: url(images/illus-mobile-app.png);">
+                                          style="background-image: url(images/illus-mobile-app.png);">
                                           <div class="overlay2"></div>
                                           <div class="my-project-context">
                                                 <br>
-                                                <p>Website</p> <br> 
+                                                <p>Website</p> <br>
                                                 <ul>
-                                                <li>HTML, CSS, TJ</li>
-                                                <li>Angular</li>
-                                                <li>Notejs</li>
-                                                <li>MongoDB</li>
-                                          </ul></ul>
+                                                      <li>HTML, CSS, Ts</li>
+                                                      <li>Angular</li>
+                                                      <li>Notejs</li>
+                                                      <li>MongoDB</li>
+                                                </ul>
+                                                </ul>
                                           </div>
                                     </div>
                                     <div class="my-project project-app" data-link="3qWg5uTYeuU?si=-EqXAdly_Eo3lB44"
@@ -155,26 +158,30 @@
                                           <div class="overlay2"></div>
                                           <div class="my-project-context">
                                                 <br>
-                                                <p>Android app</p> <br> 
+                                                <p>Android app</p> <br>
                                                 <ul>
-                                                <li>Android studio</li>
-                                                <li>firebase</li>
-                                                <li>Java</li></ul></ul>
+                                                      <li>Android studio</li>
+                                                      <li>firebase</li>
+                                                      <li>Java</li>
+                                                </ul>
+                                                </ul>
                                           </div>
                                     </div>
                                     <div class="my-project project-destop" data-link=""
-                                    style="background-image: url(images/illus-mobile-app.png);">
+                                          style="background-image: url(images/illus-mobile-app.png);">
                                           <div class="overlay2"></div>
                                           <div class="my-project-context">
                                                 <br>
-                                                <p>Android app</p> <br> 
+                                                <p>Android app</p> <br>
                                                 <ul>
-                                                <li>Android studio</li>
-                                                <li>firebase</li>
-                                                <li>Java</li></ul></ul>
+                                                      <li>Android studio</li>
+                                                      <li>firebase</li>
+                                                      <li>Java</li>
+                                                </ul>
+                                                </ul>
                                           </div>
 
-                                          
+
                                     </div>
                                     <div class="youtube-player-overlay">
                                           <div class="my-project-video">
@@ -198,62 +205,85 @@
       </script> -->
       <script>
             // Get the modal
-var modal = document.getElementById("myModal");
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-var span = document.getElementsByClassName("close")[0];
-span.onclick = function() {
-  modal.style.display = "none";
-}
-// navigation
-document.addEventListener("DOMContentLoaded", function() {
-  var navItems = document.querySelectorAll("nav ul li a");
-
-  navItems.forEach(function(item) {
-      item.addEventListener("click", function(e) {
-          navItems.forEach(function(navItem) {
-              navItem.parentElement.classList.remove("active");
-          });
-          item.parentElement.classList.add("active");
-      });
-  });
-});
-// youtube-player
-var YTPlayerOverlay = document.querySelector(".youtube-player-overlay");
-var YTLinks =document.querySelectorAll(".my-project");
-var YTPlayerPupup = document.querySelector(".my-project-video iframe");
-YTLinks.forEach((link)=>{
-  link.addEventListener("click",()=>{
-    YTPlayerOverlay.classList.add("active2");
-    let videoLink =`https://www.youtube.com/embed/${link.dataset.link}`;
-    YTPlayerPupup.src = videoLink;
-  });
-});
-YTPlayerOverlay.addEventListener("click",()=>{
-  YTPlayerOverlay.classList.remove("active2");
-})
-// JavaScript cho nút Scroll to Top
-var scrollToTopBtn = document.getElementById("scrollToTopBtn");
-        window.onscroll = function() {scrollFunction()};
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                scrollToTopBtn.style.display = "block";
-            } else {
-                scrollToTopBtn.style.display = "none";
+            var modal = document.getElementById("myModal");
+            var img = document.getElementById("myImg");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function () {
+                  modal.style.display = "block";
+                  modalImg.src = this.src;
+                  captionText.innerHTML = this.alt;
             }
-        }
+            var span = document.getElementsByClassName("close")[0];
+            span.onclick = function () {
+                  modal.style.display = "none";
+            }
+            // navigation
+            document.addEventListener("DOMContentLoaded", function () {
+                  var navItems = document.querySelectorAll("nav ul li a");
 
-        scrollToTopBtn.onclick = function() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
+                  navItems.forEach(function (item) {
+                        item.addEventListener("click", function (e) {
+                              navItems.forEach(function (navItem) {
+                                    navItem.parentElement.classList.remove("active");
+                              });
+                              item.parentElement.classList.add("active");
+                        });
+                  });
+            });
+            // youtube-player
+            var YTPlayerOverlay = document.querySelector(".youtube-player-overlay");
+            var YTLinks = document.querySelectorAll(".my-project");
+            var YTPlayerPupup = document.querySelector(".my-project-video iframe");
+            YTLinks.forEach((link) => {
+                  link.addEventListener("click", () => {
+                        YTPlayerOverlay.classList.add("active2");
+                        let videoLink = `https://www.youtube.com/embed/${link.dataset.link}`;
+                        YTPlayerPupup.src = videoLink;
+                  });
+            });
+            YTPlayerOverlay.addEventListener("click", () => {
+                  YTPlayerOverlay.classList.remove("active2");
+            })
+            // JavaScript cho nút Scroll to Top
+            var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+            window.onscroll = function () { scrollFunction() };
+
+            function scrollFunction() {
+                  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        scrollToTopBtn.style.display = "block";
+                  } else {
+                        scrollToTopBtn.style.display = "none";
+                  }
+            }
+
+            scrollToTopBtn.onclick = function () {
+                  document.body.scrollTop = 0;
+                  document.documentElement.scrollTop = 0;
+            }
+            // Menu
+            var menuBtn = document.getElementById("menu");
+            var header = document.getElementsByTagName("header")[0];
+            var overlay = document.getElementById("overlay");
+            var closeMenu = document.getElementById("closeMenu");
+            menuBtn.onclick = function () {
+                  header.classList.toggle("show");
+                  overlay.classList.toggle("show");
+                  closeMenu.classList.toggle("show");
+            };
+            closeMenu.onclick = function () {
+                  header.classList.remove("show");
+                  overlay.classList.remove("show");
+                  closeMenu.classList.remove("show");
+
+            };
+            window.onresize = function () {
+                  if (window.innerWidth > 500) {
+                        header.classList.remove("show");
+                        overlay.classList.remove("show");
+                        closeMenu.classList.remove("show");
+                  }
+            };
       </script>
 </body>
 
