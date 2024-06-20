@@ -2,9 +2,13 @@
 ------------------------------------------------------
 ------------------------------------------------------
 */
+html{
+    scroll-behavior: smooth;
+}
 /*color*/
 :root {
       --purple-color: #48126A;
+      --purple-color-light:#6a0dad;
       --black-color: #000000;
       --white-color: #ffffff;
       --text-color: #333;
@@ -61,17 +65,7 @@ a:hover {
 ------------------------------------------------------
 */
 
-/* Header Styles */
-header {
-      position: fixed;
-      background-color: var(--purple-color);
-      color: white;
-      text-align: center;
-      top: 0;
-      padding: 1em;
-      width: 16em;
-      height:100%;
-}
+
 main {
     margin-left: 19em;
     max-width: 1100px;

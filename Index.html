@@ -49,6 +49,7 @@
                         </ul>
                   </nav>
             </header>
+            <button id="scrollToTopBtn" title="Go to top">Top</button>
             <main>
                   <h2>Application Profile</h2>
                   <hr>
@@ -237,6 +238,22 @@ YTLinks.forEach((link)=>{
 YTPlayerOverlay.addEventListener("click",()=>{
   YTPlayerOverlay.classList.remove("active2");
 })
+// JavaScript cho nút Scroll to Top
+var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        }
+
+        scrollToTopBtn.onclick = function() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
       </script>
 </body>
 
