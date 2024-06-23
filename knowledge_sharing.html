@@ -60,6 +60,7 @@
                         <div class="background-image">
                             <img src="" alt="" class="topic-image">
                         </div>
+                        <div class="status"><img src="images/lock.png" alt="" width="20px"></div>
                         <p class="topic-name"></p>
                         <div class="overlay">
                             <p class="fields"></p>
@@ -67,6 +68,13 @@
                     </div>
                 </template>
 
+            </div>
+            <!-- Modal -->
+            <div id="lockModal" class="notification">
+                <div class="noti-content">
+                    <span class="close">&times;</span>
+                    <p>Chủ đề này đã được khóa bởi admin.</p>
+                </div>
             </div>
 
 
@@ -139,6 +147,33 @@
                 closeMenu.classList.remove("show");
             }
         };
+        // JavaScript cho modal
+        var modal = document.getElementById("lockModal");
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        // JavaScript cho sự kiện click trên các mục
+        document.addEventListener('DOMContentLoaded', function() {
+            var gridItems = document.querySelectorAll('.grid-item');
+
+            gridItems.forEach(function(item) {
+                item.addEventListener('click', function() {
+                    var isLocked = item.querySelector('.status img');
+                    if (isLocked) {
+                        modal.style.display = "flex";
+                    }
+                });
+            });
+        });
     </script>
 </body>
 
