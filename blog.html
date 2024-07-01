@@ -1,70 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="./css/styles.css">
-      <link rel="icon" href="images/avatarmini.png" type="image/png">
-      <title>TranVanNam</title>
-</head>
-<body>
-      <div class="container">
-            <header style="background-image: url(images/bg.png); background-size: 60px 60px;">
-                  <img src="./images/avatar.png" alt="Avatar" class="avatar">
-                  <p  class="name">Van-Nam Tran</p>
-                  <p>STUDENT OF UNIVERSITY OF ECONOMICS AND LAW</p>
-                  <p>Majors: Managerment Information system</p>
-                  <div>
-                        <img style="width: 20px;" src="images/location-pin.png" alt="location">
-                        <Span>Ho Chi Minh City</Span>
-                  </div>
-                  <hr>
-                  <nav>
-                        <ul>
-                            <li >
-                                <a href="./index.html">
-                                    <img src="./images/resume_white.png" alt="resume" class="icon icon-default">
-                                    <img src="./images/resume_black.png" alt="resume" class="icon icon-active">
-                                    My Profile
-                                </a>
-                            </li>
-                            <li>
-                                <a href="./knowledge_sharing.html">
-                                    <img src="./images/knowledge_white.png" alt="knowledge" class="icon icon-default">
-                                    <img src="./images/knowledge_black.png" alt="knowledge" class="icon icon-active">
-                                    Knowledge sharing
-                                </a>
-                            </li>
-                            <li class="active">
-                                <a href="#">
-                                    <img src="./images/blogger_white.png" alt="blog" class="icon icon-default">
-                                    <img src="./images/blogger_black.png" alt="blog" class="icon icon-active">
-                                    Blog
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>   
-            </header>
-            <div id="overlay"><span id="closeMenu">&times;</span></div>
-            <button id="scrollToTopBtn" title="Go to top">Top</button>
-            <button id="menu" title="Menu"><img src="images/menu.png" alt="" style="width: 25px;"></button>
-            <main>
-                  <h2>My Blog</h2>
-                  <hr>
-                  <br>
-                  <section class="about-me">
-                        
-                        
-                  </section>
-            
 
-            </main>
-      </div>
-      
-      <!-- <script src="./js/functions.js"></script> -->
-       <script>
-                // scroll to top button
-                var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="images/avatarmini.png" type="image/png">
+    <title>TranVanNam</title>
+</head>
+
+<body>
+    <div class="container">
+        <header style="background-image: url(images/bg.png); background-size: 60px 60px;">
+            <img src="./images/avatar.png" alt="Avatar" class="avatar">
+            <p class="name">Van-Nam Tran</p>
+            <p>STUDENT OF UNIVERSITY OF ECONOMICS AND LAW</p>
+            <p>Majors: Managerment Information system</p>
+            <div>
+                <img style="width: 20px;" src="images/location-pin.png" alt="location">
+                <Span>Ho Chi Minh City</Span>
+            </div>
+            <hr>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./index.html">
+                            <img src="./images/resume_white.png" alt="resume" class="icon icon-default">
+                            <img src="./images/resume_black.png" alt="resume" class="icon icon-active">
+                            My Profile
+                        </a>
+                    </li>
+                    <!-- <li>
+                        <a href="./knowledge_sharing.html">
+                            <img src="./images/knowledge_white.png" alt="knowledge" class="icon icon-default">
+                            <img src="./images/knowledge_black.png" alt="knowledge" class="icon icon-active">
+                            Knowledge sharing
+                        </a>
+                    </li> -->
+                    <li class="active">
+                        <a href="#">
+                            <img src="./images/blogger_white.png" alt="blog" class="icon icon-default">
+                            <img src="./images/blogger_black.png" alt="blog" class="icon icon-active">
+                            Blog
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div id="overlay"><span id="closeMenu">&times;</span></div>
+        <button id="scrollToTopBtn" title="Go to top">Top</button>
+        <button id="menu" title="Menu"><img src="images/menu.png" alt="" style="width: 25px;"></button>
+        <main>
+            <h2>My Blog</h2>
+            <!-- <section class="about-me">
+
+            </section> -->
+            <!-- <div class="pdf-container">
+                <iframe src="https://drive.google.com/file/d/1ipqb3l5GFGREIOh0mJkgXESK67QWdVU0/preview" allow="autoplay"></iframe>
+            </div> -->
+
+
+        </main>
+    </div>
+
+    <!-- <script src="./js/functions.js"></script> -->
+    <script>
+        // scroll to top button
+        var scrollToTopBtn = document.getElementById("scrollToTopBtn");
         window.onscroll = function () { scrollFunction() };
 
         function scrollFunction() {
@@ -102,6 +104,8 @@
                 closeMenu.classList.remove("show");
             }
         };
-       </script>
+    </script>
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
 </body>
+
 </html>
