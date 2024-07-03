@@ -1,0 +1,46 @@
+[
+      {
+            "id": "001",
+            "name": "html5",
+            "image": "html.png"
+      },
+      {
+            "id": "002",
+            "name": "css3",
+            "image": "css.png"
+      },{
+            "id": "003",
+            "name": "Sjavascript",
+            "image": "js.png"
+      },{
+            "id": "004",
+            "name": "nodejs",
+            "image": "nodejs.png"
+      },{
+            "id": "005",
+            "name": "java",
+            "image": "java.jpeg"
+      },{
+            "id": "006",
+            "name": "python",
+            "image": "python.png"
+      },{
+            "id": "007",
+            "name": "SAP ERP",
+            "image": "bg.png"
+      },{
+            "id": "008",
+            "name": "SAP ERP",
+            "image": "bg.png"
+      },{
+            "id": "009",
+            "name": "SAP ERP",
+            "image": "bg.png"
+      },{
+            "id": "010",
+            "name": "SAP ERP",
+            "image": "bg.png"
+      }
+
+
+]
