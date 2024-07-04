@@ -11,25 +11,41 @@
 <body>
       <div class="container">
             <header>
-                  <h2> Profile</h2>
-                  <hr>
+                  <div>
+                        <h2 data-translate="title">Profile</h2>
+                        <div style="display: flex;"><a href="./blog.html">
+                              <div class="blog">
+                                    <div>Blog</div>
+                              </div>
+                        </a>
+                        <select id="language-selector">
+                              <option value="en">English</option>
+                              <option value="vi">Tiếng Việt</option>
+                        </select></div>
+                        
+                  </div>
             </header>
-            <button id="scrollToTopBtn" title="Go to top">Top</button>
+            <button id="scrollToTopBtn" title="Go to top">
+                  <svg class="icon" viewBox="0 -5 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 4L6 10L7.41 11.41L12 6.83L16.59 11.41L18 10L12 4Z" fill="currentColor"/>
+                  </svg>
+              </button>
             <main>
                   <section class="introduction">
                         <div class="hello">
-                              <div>hello!</div>
+                              <div data-translate="hello">hello!</div>
                         </div>
                         <div class="hello-name">
-                              <p>I’m <span>Tran Van Nam</span>,</br>
-                                    Software Developer</p>
+                              <p>
+                                    <span data-translate="introPart1">I’m</span>
+                                    <span data-translate="introName" class="my-name">Tran Van Nam</span>,</br>
+                                    <span data-translate="introPart2">Software Developer</span>
+                              </p>
                         </div>
                         <div class="hello-info">
                               <div class="hello-info-major">
                                     <span>"</span>
-                                    <p>Nice to meet you, I’m Trần Văn Nam,<br>I’m a student of University of Economic
-                                          and Law <br>Major: Management information System
-                                    </p>
+                                    <p data-translate="greeting"></p>
                               </div>
                               <div class="hello-info-title">
                                     <div class="stars">
@@ -46,35 +62,31 @@
                                                 <polygon points="50,0 61,39 100,50 61,61 50,100 39,61 0,50 39,39" />
                                           </svg>
                                     </div>
-                                    <p>Intern</p>
+                                    <p data-translate="intern"></p>
                               </div>
                               <div class="hello-info-avatar">
                                     <div class="ellipse"></div>
                                     <div class="my-avatar"><img src="images/avatar-removebg-preview.png" alt=""></div>
                               </div>
-                              
+
                         </div>
                         <div style="background-image: url(images/bg.png); background-size: 60px 60px;"
                               class="career-objectivate">
-                              <span>Career Objective</span>
-                              <p>"I am currently looking for an internship opportunity in the technology sector, where I
-                                    can apply my knowledge and practical experience gained through university projects
-                                    and learn new things from team. With a strong desire to become a software developer,
-                                    I am eager to contribute to projects, collaborate effectively within teams, and help
-                                    the organization achieve its goals." ---2024</p>
+                              <span data-translate="careerObjective"></span>
+                              <p data-translate="internship_objective"></p>
 
                         </div>
 
                   </section>
                   <section class="experience">
                         <div class="experience-title">
-                              <div>Experience</div>
+                              <div data-translate="experience"></div>
                         </div>
                         <div class="experience-content">
                               <div class="experience-content-right">
-                                    <p style="font-size: 24px;">QT-Data Inc, Technology Internship</p>
-                                    <p style="font-size: 14px;">03/2023 - 06/2023</p>
-                                    <p style="font-size: 24px;">Certificate</p>
+                                    <p style="font-size: 24px;" data-translate="experience_company"></p>
+                                    <p style="font-size: 14px;" data-translate="experience_duration"></p>
+                                    <p style="font-size: 24px;" data-translate="experience_certificate"></p>
                                     <div class="certificate-image">
                                           <img id="myImg" style="width: 150px;" src="./images/Certificate.png"
                                                 alt="Certificate of internship">
@@ -90,78 +102,84 @@
 
                               </div>
                               <div class="experience-content-left">
-                                    <p style="font-size: 24px; margin-left: 20px;">Contribute</p>
+                                    <p style="font-size: 24px; margin-left: 20px;" data-translate="contribute_title">
+                                    </p>
                                     <ul>
-                                          <li><b>Crawled data:</b> Developed scripts and tools for web scraping and data
-                                                extraction.</li>
-                                          <li><b>Developed automation tools:</b> Created and maintained tools to
-                                                automate repetitive tasks and improve workflow efficiency.</li>
-                                          <li><b>Updated working systems:</b> Updated code to display work notifications
-                                                and ensure accurate information is presented to teams.</li>
+                                          <li data-translate="contribute_list_1"></li>
+                                          <li data-translate="contribute_list_2"></li>
+                                          <li data-translate="contribute_list_3"></li>
+                                    </ul>
                                     </ul>
                               </div>
                   </section>
                   <section class="video-demo">
                         <div class="video-demo-title">
-                              <div>Projects at university</div>
+                              <div data-translate="projects"></div>
                         </div>
                         <div class="youtube-player-overlay">
                               <div class="my-project-video">
-                                    <iframe src="https://www.youtube.com/embed/"
-                                          title="YouTube video player" frameborder="0"
+                                    <iframe src="https://www.youtube.com/embed/" title="YouTube video player"
+                                          frameborder="0"
                                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                          referrerpolicy="strict-origin-when-cross-origin"
-                                          allowfullscreen></iframe>
+                                          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                               </div>
                         </div>
                         <div class="videos">
                               <div class="box-video">
                                     <div class="video-info">
                                           <div class="video-info-left">
-                                                <p>This e-commerce site, built with Angular, Node.js, and MongoDB, offers product browsing, cart management, purchases, and secure user authentication with a modern UI.</p>
-                                                
-                                                <div class="show-video" data-link="2CkpGk7luu0?si=9dYPeJmfFSKgY_m-">
+                                                <p data-translate="ecommerce_description"></p>
+
+                                                <div class="show-video" data-translate="showvideo"
+                                                      data-link="2CkpGk7luu0?si=9dYPeJmfFSKgY_m-">
                                                       Video demo
                                                 </div>
                                           </div>
                                           <div class="video-info-right">
-                                                
-                                                <p>Tools</p>
+
+                                                <p data-translate="tools"></p>
                                                 <div class="video-info-left-img"><img src="images/js.jpeg" alt=""></div>
-                                                <div class="video-info-left-img"><img src="images/nodejs.png" alt=""></div>
-                                                <div class="video-info-left-img"><img src="images/angular.png" alt=""></div>
-                                                <div class="video-info-left-img"><img src="images/mongoDB.png" alt=""></div>
+                                                <div class="video-info-left-img"><img src="images/nodejs.png" alt="">
+                                                </div>
+                                                <div class="video-info-left-img"><img src="images/angular.png" alt="">
+                                                </div>
+                                                <div class="video-info-left-img"><img src="images/mongoDB.png" alt="">
+                                                </div>
                                           </div>
-                                          
+
                                     </div>
                                     <div class="video-image">
                                           <p style="text-align: center;">Website</p>
                                           <hr>
-                                          <div > <img src="images/websiteill.jpeg" alt="" width="100%"></div>
+                                          <div> <img src="images/websiteill.jpeg" alt="" width="100%"></div>
                                     </div>
                               </div>
                               <div class="box-video">
                                     <div class="video-info">
                                           <div class="video-info-left">
-                                                <p>This Android app, built using Android Studio and Firebase, ensures secure data storage and ease of use. It features a user-friendly interface and data analysis tools for administrators.</p>
-                                                
-                                                <div class="show-video" data-link="3qWg5uTYeuU?si=-EqXAdly_Eo3lB44">
+                                                <p data-translate="androiddescription"></p>
+
+                                                <div class="show-video" data-translate="showvideo"
+                                                      data-link="3qWg5uTYeuU?si=-EqXAdly_Eo3lB44">
                                                       Video demo
                                                 </div>
                                           </div>
                                           <div class="video-info-right">
-                                                
-                                                <p>Tools</p>
-                                                <div class="video-info-left-img"><img src="images/java.jpeg" alt=""></div>
-                                                <div class="video-info-left-img"><img src="images/firebase.png" alt=""></div>
-                                                <div class="video-info-left-img"><img src="images/androidstudio.jpg" alt=""></div>
+
+                                                <p data-translate="tools"></p>
+                                                <div class="video-info-left-img"><img src="images/java.jpeg" alt="">
+                                                </div>
+                                                <div class="video-info-left-img"><img src="images/firebase.png" alt="">
+                                                </div>
+                                                <div class="video-info-left-img"><img src="images/androidstudio.jpg"
+                                                            alt=""></div>
                                           </div>
-                                          
+
                                     </div>
                                     <div class="video-image">
                                           <p style="text-align: center;">Android app</p>
                                           <hr>
-                                          <div > <img src="images/illus-mobile-app.png" alt="" width="100%"></div>
+                                          <div> <img src="images/illus-mobile-app.png" alt="" width="100%"></div>
                                     </div>
                               </div>
                         </div>
@@ -169,7 +187,7 @@
                   <section class="specialized-skills">
                         <div class="specialized-skills-title">
                               <hr>
-                              <div>Specialized tool skills</div>
+                              <div data-translate="skills"></div>
                               <hr>
                         </div>
 
@@ -189,19 +207,14 @@
                   <section class="other-skills">
                         <div class="specialized-skills-title">
                               <hr>
-                              <div>Knowledge</div>
+                              <div data-translate="knowledge"></div>
                               <hr>
                         </div>
                         <ul>
-                              <li><b>Developed a basic website:</b> Analyzed business processes, designed UI interfaces,
-                                    developed front-end and back-end, designed database structures, and deployed the
-                                    application.</li>
-                              <li><b>Developed a basic Android application:</b> Analyzed business processes, designed UI
-                                    interfaces, developed the front-end, and designed database structures.</li>
-                              <li><b>SAP ERP:</b> Understanding of key terms and basic operations within the system.
-                              </li>
-                              <li><b>Business Intelligence:</b> Utilized SSIS and SSAS tools for data integration, and
-                                    Power BI for dashboard visualization.</li>
+                              <li data-translate="basic_website"></li>
+                              <li data-translate="basic_android_app"></li>
+                              <li data-translate="sap_erp"></li>
+                              <li data-translate="business_intelligence"></li>
                         </ul>
 
                   </section>
@@ -212,17 +225,17 @@
                   <div class="contact">
                         <div class="img-cute-boy"><img src="images/cuteboy.jpg" alt=""></div>
                         <div class="contact-box">
-                              <p class="contact-box-title">Contact</p>
+                              <p data-translate="contact" class="contact-box-title">Contact</p>
                               <hr style="background-color:#6d6d6d; height: 1px;">
                               <br>
                               <div class="contact-box-info" id="email-address">
                                     <img src="./images/email.png" alt="mail">
-                                    <div><a href="mailto:tranvannamntt@gmail.com" style=""> tranvannamntt@gmail.com</a>
+                                    <div><a href="mailto:tranvannamntt@gmail.com"> tranvannamntt@gmail.com</a>
                                     </div>
                               </div>
                               <div class="contact-box-info">
                                     <img src="./images/phone.png" alt="mail">
-                                    <p>Phone number </br>0366 187 296</p>
+                                    <p data-translate="phone">Phone number </br>0366 187 296</p>
                               </div>
                               <div class="contact-box-info">
                                     <img src="images/github.png" alt="mail">
@@ -233,6 +246,7 @@
                   </div>
             </footer>
       </div>
+      <script src="js/translate.js"></script>
       <script>
             var modal = document.getElementById("myModal");
             var img = document.getElementById("myImg");
@@ -300,6 +314,7 @@
             YTPlayerOverlay.addEventListener("click", () => {
                   YTPlayerOverlay.classList.remove("active2");
             })
+
       </script>
 </body>
 

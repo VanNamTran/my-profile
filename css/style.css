@@ -37,14 +37,78 @@ a {
 .container {
       max-width: 1380px;
       margin: 0 auto;
-      padding: 10px 10px 30px 10px;
+      padding: 0px 10px 30px 10px;
       box-sizing: border-box;
       position: relative;
 }
 
-/* -- */
-.introduction {}
+header{
+      width: 100%;
+      background-color: white;
+      z-index: 2;
+      border-bottom: 1px solid var(--gray-color);
+}
+header div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
 
+header div h2{
+      margin: 10px;
+}
+.blog {
+      text-align: center;
+}
+
+.blog div {
+      display: inline-block;
+      padding: 5px 30px;
+      margin-right: 10px;
+      background-color: var(--white-color);
+      border: 2px solid var(--black-color);
+      border-radius: 5px;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      color: var(--black-color);
+}
+.blog div:hover{
+      background-color: var(--purple-color-light);
+      color: var(--white-color);
+}
+/* -- */
+#language-selector {
+      appearance: none; /* Loại bỏ kiểu mặc định của trình duyệt */
+      -webkit-appearance: none; /* Tương thích với Safari và Chrome */
+      -moz-appearance: none; /* Tương thích với Firefox */
+      padding: 5px 15px;
+      font-size: 16px;
+      border: 2px solid var(--orange-color);
+      border-color: var(--black-color);
+      border-radius: 5px;
+      color: var(--black-color);
+      background-color: var(--white-color);
+      background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCAxMDAgNTAiPgogIDxwYXRoIGQ9Ik0yNSwyMEwgNTAsNDBMMzAsMzAsMjUsNDAsMk0yNSwyMEwzMCwzMEwyNSwyMEoiIHN0cm9rZT0iIzAwMDAiIHN0cm9rZS13aWR0aD0iMiIgLz4KPC9zdmc+');
+      background-repeat: no-repeat;
+      background-position: right 0px center;
+      background-size: 20px;
+      cursor: pointer;
+      transition: border-color 0.3s ease;
+  }
+
+  /* Style cho hover và focus */
+  #language-selector:hover,
+  #language-selector:focus {
+      border-color: var(--orange-color);
+      outline: none; 
+  }
+  #language-selector::-ms-expand {
+      display: none;
+  }
+  option{
+      height: 50px;
+  }
 .hello {
       text-align: center;
       padding: 20px;
@@ -52,7 +116,6 @@ a {
 
 .hello div {
       display: inline-block;
-      width: 70px;
       padding: 7px 20px;
       background-color: var(--white-color);
       border: 2px solid var(--black-color);
@@ -70,7 +133,7 @@ a {
       font-size: 24px;
 }
 
-.hello-name p span {
+.my-name{
       color: var(--purple-color-light);
 }
 
@@ -428,9 +491,9 @@ color: var(--white-color);
 
 .show-video {
       position: absolute;
-      bottom: 20px;
+      bottom: 10px;
       display: inline-block;
-      padding: 15px 20px;
+      padding: 5px 25px;
       background-color: var(--white-color);
       border: 2px solid var(--black-color);
       border-radius: 25px;
@@ -565,7 +628,11 @@ color: var(--white-color);
       padding: 10px;
       border-radius: 10px;
 }
-
+#scrollToTopBtn .icon {
+      width: 30px; /* Kích thước biểu tượng */
+      height: 30px;
+      color: white; /* Màu biểu tượng */
+  }
 #scrollToTopBtn:hover {
       background-color: var(--purple-color-light);
 }
