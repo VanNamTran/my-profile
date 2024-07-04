@@ -31,7 +31,7 @@
       },{
             "id": "008",
             "name": "mongoDB",
-            "image": "mongoDb.png"
+            "image": "mongoDB.png"
       },{
             "id": "009",
             "name": "firebase",
