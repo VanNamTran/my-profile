@@ -11,7 +11,7 @@
       },{
             "id": "003",
             "name": "Sjavascript",
-            "image": "js.png"
+            "image": "js.jpeg"
       },{
             "id": "004",
             "name": "nodejs",
@@ -26,20 +26,20 @@
             "image": "python.png"
       },{
             "id": "007",
-            "name": "SAP ERP",
-            "image": "bg.png"
+            "name": "angular",
+            "image": "angular.png"
       },{
             "id": "008",
-            "name": "SAP ERP",
-            "image": "bg.png"
+            "name": "mongoDB",
+            "image": "mongoDb.png"
       },{
             "id": "009",
-            "name": "SAP ERP",
-            "image": "bg.png"
+            "name": "firebase",
+            "image": "firebase.png"
       },{
             "id": "010",
-            "name": "SAP ERP",
-            "image": "bg.png"
+            "name": "mysql",
+            "image": "mysql.jpeg"
       }
 
 
