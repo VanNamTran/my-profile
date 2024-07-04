@@ -388,7 +388,12 @@ color: var(--white-color);
       width: 50px;
       height: 50px;
 }
-
+.video-info-left p{
+            padding: 0px 10px 10px 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 16px;
+            font-weight: normal
+}
 .video-info {
       display: flex;
 }
