@@ -40,23 +40,34 @@ a {
       padding: 0px 10px 30px 10px;
       box-sizing: border-box;
       position: relative;
-}
+      display: flex;
+      flex-direction: column;
+  }
 
-header{
+  header {
+      position: fixed;
+      top: 0;
+      left: 0;
       width: 100%;
       background-color: white;
-      z-index: 2;
+      z-index: 1;
       border-bottom: 1px solid var(--gray-color);
-}
-header div {
+      transition: transform 0.3s ease;
+      padding: 10px 0;
+  }
+
+  .header-container {
       display: flex;
+      max-width: 1380px;
+      margin: 0 auto;
+      padding: 0 10px;
       justify-content: space-between;
       align-items: center;
-}
+  }
 
-header div h2{
-      margin: 10px;
-}
+  .header-container h2 {
+      margin: 0;
+  }
 .blog {
       text-align: center;
 }
@@ -79,9 +90,8 @@ header div h2{
 }
 /* -- */
 #language-selector {
-      appearance: none; /* Loại bỏ kiểu mặc định của trình duyệt */
-      -webkit-appearance: none; /* Tương thích với Safari và Chrome */
-      -moz-appearance: none; /* Tương thích với Firefox */
+      appearance: none; 
+      -webkit-appearance: none; 
       padding: 5px 15px;
       font-size: 16px;
       border: 2px solid var(--orange-color);
@@ -109,6 +119,10 @@ header div h2{
   option{
       height: 50px;
   }
+
+.introduction{
+      margin-top: 50px;
+}
 .hello {
       text-align: center;
       padding: 20px;
