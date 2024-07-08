@@ -12,13 +12,26 @@ function applyTranslations(translations) {
         element.innerHTML = translations[key];
     });
 }
+function saveLanguage(lang) {
+    localStorage.setItem('preferredLanguage', lang);
+}
 
+function getSavedLanguage() {
+    const lang = localStorage.getItem('preferredLanguage');
+    return lang;
+}
 languageSelector.addEventListener('change', (event) => {
     const selectedLanguage = event.target.value;
     loadLanguage(selectedLanguage);
+    saveLanguage(selectedLanguage);
 });
 
 // Load default language on page load
 document.addEventListener('DOMContentLoaded', () => {
-    loadLanguage('en');
+    const savedLanguage = getSavedLanguage();
+    const defaultLanguage = 'en';
+    
+    const languageToLoad = savedLanguage || defaultLanguage;
+    languageSelector.value = languageToLoad;
+    loadLanguage(languageToLoad);
 });
