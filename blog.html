@@ -11,60 +11,42 @@
 
 <body>
       <div class="container">
-            <header id="header">
-                  <div class="header-container">
-                        <h2 data-translate="title2"></h2>
-                        <div style="display: flex;"><a href="./index.html">
-                                    <div class="blog">
-                                          <div>About me</div>
-                                    </div>
-                              </a>
-                              <select id="language-selector">
-                                    <option value="en">English</option>
-                                    <option value="vi">Tiếng Việt</option>
-                              </select>
-                        </div>
-
-                  </div>
-            </header>
+            <div id="header2"></div>
             <button id="scrollToTopBtn" title="Go to top">
                   <svg class="icon" viewBox="0 -5 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 4L6 10L7.41 11.41L12 6.83L16.59 11.41L18 10L12 4Z" fill="currentColor" />
                   </svg>
             </button>
-           <main>
-            <div class="nav"></div>
-            <article><img src="images/fix.jpeg" alt=""> </article>
-            <div class="sub"></div>
-           </main>
-           <footer>
-            <hr style="background-color:#6d6d6d; height: 2px;">
-            <div class="contact">
-                  <div class="img-cute-boy"><img src="images/cuteboy.jpg" alt=""></div>
-                  <div class="contact-box">
-                        <p data-translate="contact" class="contact-box-title"></p>
-                        <hr style="background-color:#6d6d6d; height: 1px;">
-                        <br>
-                        <div class="contact-box-info" id="email-address">
-                              <img src="./images/email.png" alt="mail">
-                              <div><a href="mailto:tranvannamntt@gmail.com"> tranvannamntt@gmail.com</a>
+
+            <div class="container-main">
+                  <div id="nav"></div>
+                  <main id="content">
+                        <div class="content">
+                              <h1 data-translate="blogWelcomeTitle"></h1>
+                              <h2 id="section1" data-translate="blogIntroduction">Introduction</h2>
+                              <p data-translate="blogWelcomeIntro1"></p>
+                              <p data-translate="blogWelcomeIntro2"></p>
+                              <p data-translate="blogWelcomeIntro3"></p>
+                              <p data-translate="blogWelcomeIntro4"></p>
+                              <img src="images/soldiers-8903095_1280.jpg" alt="">
                               </div>
+                        <div class="catalog"> 
+                              <p style="font-size: 20px;font-weight: bold;margin: 0;" data-translate="TableOfContents">On this page</p>
+                              <hr>
+                              <ul>
+                                    <li><a href="#section1" data-translate="blogIntroduction"></a></li>
+                  
+                              </ul>
                         </div>
-                        <div class="contact-box-info">
-                              <img src="./images/phone.png" alt="mail">
-                              <p data-translate="phone"></p>
-                        </div>
-                        <div class="contact-box-info">
-                              <img src="images/github.png" alt="mail">
-                              <p>GitHub </br><a href="https://github.com/VanNamTran"
-                                          target="_blank">https://github.com/VanNamTran</a></p>
-                        </div>
-                  </div>
+                  </main>
+
             </div>
-      </footer>
+            <div id="footer"></div>
       </div>
-      <script src="js/translate.js"></script>
+      <script src="js/load-compoments.js"></script>
       <script src="js/functions.js"></script>
+      <script src="js/translate.js"></script>
+      <script src="js/scroll-spy.js"></script>
 </body>
 
 </html>
