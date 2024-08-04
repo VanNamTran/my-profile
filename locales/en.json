@@ -169,6 +169,36 @@
   "conclusionTitle": "Conclusion",
   "conclusionText": "Computer networks are continually evolving and shaping the future of both society and the economy. I hope the information I have shared provides you with a deeper understanding of the role and various aspects of computer networks. To expand your knowledge about telecommunications technology, network systems, and other advanced technology trends, be sure not to miss the updated posts on my blog."
 ,"contents":"Blog posts",
-"TableOfContents":"Table of Contents"
+"TableOfContents":"Table of Contents",
+"start_topic_cc_bcc_email":"Email communication is an essential part of both professional and personal interactions. While composing an email, you might have noticed different fields labeled 'To', 'CC' và 'BCC'. Understanding the purpose and proper usage of these fields can significantly impact the clarity and confidentiality of your communication. In this article, we will explore the differences between 'To', 'CC' và 'BCC', and provide insights into when and how to use each option effectively to ensure your message is delivered to the right recipients in the most appropriate manner."
+,    "emailDifferencesTitle": "The differences between To, CC, and BCC when sending email?",
+"exampleExplanation": "Let me give you an example as illustrated below."
+,"emailExample": "Suppose you are the boy in the blue shirt. When you send an email, there are three groups of recipients: 'To' for those in the yellow area, 'CC' for those in the blue area, and 'BCC' for those in the pink area.",
+  "emailVisibility": "Recipients in the 'To' field will see all other recipients in the 'To' and 'CC' fields. Recipients in the 'CC' field will also see all other recipients in the 'To' and 'CC' fields. This means that everyone in the 'To' and 'CC' fields can see each other. However, recipients in the 'BCC' field, those at the back, will see all recipients in the 'To' and 'CC' fields but will not see other recipients in the 'BCC' field because they are hidden from each other. Conversely, those in the 'To' and 'CC' fields at the front will not see those who are in the 'BCC' field at the back.",
+  "summaryTable": "Summary Table",
+  "recipientField": "Recipient Field",
+  "seesTo": "Sees 'To'",
+  "seesCC": "Sees 'CC'",
+  "seesBCC": "Sees 'BCC'",
+  "seenByTo": "Seen by 'To'",
+  "seenByCC": "Seen by 'CC'",
+  "seenByBCC": "Seen by 'BCC'",
+  "senderField": "Sender",
+  "yes":"yes",
+  "no":"no",
+  "whenToUseCCBCC": "When to Use To, CC, and BCC",
+  "toField": "To (Direct)",
+  "toDescription": "Main recipient: Use the 'To' field for the main recipients of the email. These are the people the email is directly addressed to and from whom you expect a response or action.",
+  "toExample": "Example: Sending a project update to team members who are directly involved in the project.",
+  
+  "ccField": "CC (Carbon Copy)",
+  "ccDescription": "Secondary recipient: Use the 'CC' field for secondary recipients who need to be informed of the email's content but do not need to respond or take action. This field is primarily for keeping people in the loop.",
+  "ccExample": "Example: Including your manager in an email conversation with a client so they are aware of the communication but do not need to respond.",
+  
+  "bccField": "BCC (Blind Carbon Copy)",
+  "bccDescription": "Confidential recipient: Use the 'BCC' field when you want to send an email to multiple recipients without them seeing each other's email addresses. This is useful for maintaining privacy.",
+  "bccExample": "Example: Sending a newsletter to a large group of people where you do not want to disclose their email addresses to each other.",
+  "summaryTitle": "Summary",
+  "summaryContent": "I hope these guidelines help you better understand when to use the 'To', 'CC', and 'BCC' fields when sending emails. Mastering the use of these fields not only helps you manage your emails more efficiently but also protects the privacy of the recipients. For more topics, don't miss the updates on my blog."
 
 }

@@ -169,5 +169,36 @@
     "conclusionTitle": "Lời kết",
     "conclusionText": "Mạng máy tính không ngừng phát triển và đang định hình tương lai của cả xã hội và nền kinh tế. Tôi hy vọng rằng những thông tin tôi đã chia sẻ giúp bạn có cái nhìn sâu sắc hơn về vai trò và các khía cạnh khác của mạng máy tính. Để mở rộng hiểu biết về công nghệ viễn thông, hệ thống mạng và những xu hướng công nghệ tiên tiến khác, đừng bỏ lỡ các bài viết cập nhật tại blog của tôi."
     ,"contents":"Các bài viết",
-    "TableOfContents":"Mục lục bài viết"
+    "TableOfContents":"Mục lục bài viết",
+    "start_topic_cc_bcc_email":"Giao tiếp qua email là một phần thiết yếu trong cả công việc lẫn cuộc sống cá nhân. Khi soạn thảo email, bạn có thể đã thấy các trường khác nhau được gắn nhãn 'To', 'CC' và 'BCC'. Hiểu được mục đích và cách sử dụng đúng đắn các trường này có thể ảnh hưởng đáng kể đến sự rõ ràng và tính bảo mật của thông tin liên lạc của bạn. Trong bài viết này, chúng ta sẽ khám phá sự khác biệt giữa 'To', 'CC' và 'BCC', và cung cấp cái nhìn sâu sắc về thời điểm và cách sử dụng từng tùy chọn này một cách hiệu quả để đảm bảo thông điệp của bạn được gửi đến đúng người nhận một cách phù hợp nhất.",
+
+    "emailDifferencesTitle": "Sự khác biệt giữa To, CC và BCC khi gửi Email là gì?",
+"exampleExplanation": "Để tôi cho bạn một ví dụ như hình minh họa dưới đây."
+,"emailExample": "Giả dụ bạn là cậu bé áo xanh kia. Khi bạn gửi email, sẽ có ba nhóm đối tượng nhận: 'To' cho những người trong vùng màu vàng, 'CC' cho những người trong vùng màu xanh lam và 'BCC' cho những người trong vùng màu hồng.",
+  "emailVisibility": "Người nhận trong trường 'To' sẽ thấy tất cả những người nhận khác trong trường 'To' và 'CC'. Người nhận trong trường 'CC' cũng sẽ thấy tất cả những người nhận khác trong trường 'To' và 'CC'. Điều này có nghĩa là tất cả những người trong trường 'To' và 'CC' đều thấy nhau. Tuy nhiên, người nhận trong trường 'BCC', những người đứng phía sau, sẽ thấy tất cả những người nhận trong trường 'To' và 'CC' nhưng sẽ không thấy những người nhận khác trong trường 'BCC' vì họ được ngăn cách với nhau. Ngược lại, những người ở trường 'To' và 'CC' đang đứng ở phía trước nên sẽ không thấy những người được nhận email ở phía sau là trường 'BCC'.",
+  "summaryTable": "Bảng tóm tắt",
+  "recipientField": "Trường nhận",
+  "seesTo": "Thấy 'To'",
+  "seesCC": "Thấy 'CC'",
+  "seesBCC": "Thấy 'BCC'",
+  "seenByTo": "Thấy bởi 'To'",
+  "seenByCC": "Thấy bởi 'CC'",
+  "seenByBCC": "Thấy bởi 'BCC'",
+  "senderField": "Người gửi",
+  "yes":"có",
+  "no":"không",
+  "whenToUseCCBCC": "Khi nào nên sử dụng To, CC và BCC",
+  "toField": "To (Trực tiếp)",
+  "toDescription": "Người nhận chính: Sử dụng trường 'To' cho những người nhận chính của email. Đây là những người mà email được gửi đến trực tiếp và từ đó bạn mong đợi một phản hồi hoặc hành động.",
+  "toExample": "Ví dụ: Gửi bản cập nhật dự án cho các thành viên trong nhóm đang tham gia trực tiếp vào dự án.",
+  
+  "ccField": "CC (Carbon Copy)",
+  "ccDescription": "Người nhận phụ: Sử dụng trường 'CC' cho những người nhận phụ cần được thông báo về nội dung email nhưng không cần phải phản hồi hoặc hành động. Trường này chủ yếu để giữ mọi người trong vòng thông tin.",
+  "ccExample": "Ví dụ: Bao gồm quản lý của bạn trong một cuộc trò chuyện email với khách hàng để họ biết về thông tin liên lạc nhưng không cần phải trả lời.",
+  
+  "bccField": "BCC (Blind Carbon Copy)",
+  "bccDescription": "Người nhận cần bảo mật thông tin: Sử dụng trường 'BCC' khi bạn muốn gửi email cho nhiều người nhận mà không để họ thấy địa chỉ email của nhau. Điều này hữu ích để duy trì sự riêng tư.",
+  "bccExample": "Ví dụ: Gửi bản tin đến một nhóm lớn người mà bạn không muốn tiết lộ địa chỉ email của họ cho nhau."
+ , "summaryTitle": "Tổng kết",
+  "summaryContent": "Hy vọng các hướng dẫn này giúp bạn hiểu rõ hơn khi nào nên sử dụng các trường 'To', 'CC', và 'BCC' khi gửi email. Việc nắm vững cách sử dụng các trường này không chỉ giúp bạn quản lý email hiệu quả hơn mà còn bảo vệ quyền riêng tư của người nhận. Để biết thêm nhiều chủ đề khác, xin đừng bỏ lỡ các bài viết cập nhật tại blog của tôi."
 }
