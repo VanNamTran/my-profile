@@ -56,6 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.getElementById('menu-toggle');
     const mainNav = document.getElementById('main-nav');
     const overlay = document.getElementById('overlay');
+    const close= document.getElementById('closeMenu')
     const body = document.body;
 
     function toggleMenu() {
@@ -81,6 +82,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (menuToggle && mainNav && overlay) {
         menuToggle.addEventListener('click', toggleMenu);
         overlay.addEventListener('click', closeMenu);
+        if (close) {
+            close.addEventListener('click', closeMenu);
+        }else{
+            console.log("Element #closeMenu not found")
+        }
     }
 
     window.addEventListener('resize', () => {

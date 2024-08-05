@@ -155,7 +155,10 @@ main {
         right: auto;
         height: auto;
         margin: 0 auto;
+        padding: 1rem;
         overflow-y: auto;
+        border: 1px solid var(--gray-color);
+        border-radius: 5px;
     }
     #nav{
         display: none;
@@ -167,6 +170,10 @@ main {
     #main-nav.show {
         display: block;
         left: 0; 
+    }
+    .content {
+
+        padding: 0rem;
     }
 }
 .overlay {
@@ -185,12 +192,13 @@ main {
 }
 #main-nav {
     position: fixed;
+    display: none;
     background: #fff;
     height: 100vh; 
+    max-width: 320px;
     overflow-y: auto;
     z-index: 1000;
     border-left: 1px solid #ccc;
-    left: -100%;
 }
 .content {
     line-height: 1.6;
