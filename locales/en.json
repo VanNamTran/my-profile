@@ -198,7 +198,7 @@
   "bccField": "BCC (Blind Carbon Copy)",
   "bccDescription": "Confidential recipient: Use the 'BCC' field when you want to send an email to multiple recipients without them seeing each other's email addresses. This is useful for maintaining privacy.",
   "bccExample": "Example: Sending a newsletter to a large group of people where you do not want to disclose their email addresses to each other.",
-  "summaryTitle": "Summary",
+  "summaryTitle": "Conclusion",
   "summaryContent": "I hope these guidelines help you better understand when to use the 'To', 'CC', and 'BCC' fields when sending emails. Mastering the use of these fields not only helps you manage your emails more efficiently but also protects the privacy of the recipients. For more topics, don't miss the updates on my blog."
 
 }

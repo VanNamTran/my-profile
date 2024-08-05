@@ -199,6 +199,6 @@
   "bccField": "BCC (Blind Carbon Copy)",
   "bccDescription": "Người nhận cần bảo mật thông tin: Sử dụng trường 'BCC' khi bạn muốn gửi email cho nhiều người nhận mà không để họ thấy địa chỉ email của nhau. Điều này hữu ích để duy trì sự riêng tư.",
   "bccExample": "Ví dụ: Gửi bản tin đến một nhóm lớn người mà bạn không muốn tiết lộ địa chỉ email của họ cho nhau."
- , "summaryTitle": "Tổng kết",
+ , "summaryTitle": "Lời kết",
   "summaryContent": "Hy vọng các hướng dẫn này giúp bạn hiểu rõ hơn khi nào nên sử dụng các trường 'To', 'CC', và 'BCC' khi gửi email. Việc nắm vững cách sử dụng các trường này không chỉ giúp bạn quản lý email hiệu quả hơn mà còn bảo vệ quyền riêng tư của người nhận. Để biết thêm nhiều chủ đề khác, xin đừng bỏ lỡ các bài viết cập nhật tại blog của tôi."
 }
