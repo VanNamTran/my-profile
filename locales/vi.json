@@ -201,4 +201,38 @@
   "bccExample": "Ví dụ: Gửi bản tin đến một nhóm lớn người mà bạn không muốn tiết lộ địa chỉ email của họ cho nhau."
  , "summaryTitle": "Lời kết",
   "summaryContent": "Hy vọng các hướng dẫn này giúp bạn hiểu rõ hơn khi nào nên sử dụng các trường 'To', 'CC', và 'BCC' khi gửi email. Việc nắm vững cách sử dụng các trường này không chỉ giúp bạn quản lý email hiệu quả hơn mà còn bảo vệ quyền riêng tư của người nhận. Để biết thêm nhiều chủ đề khác, xin đừng bỏ lỡ các bài viết cập nhật tại blog của tôi."
+, "introTextEMK": "Trong thế giới kinh doanh hiện đại, email marketing đã trở thành một công cụ quan trọng giúp các doanh nghiệp kết nối với khách hàng và đối tác. Tuy nhiên, để chiến dịch email marketing thực sự thành công, việc chỉ đơn thuần gửi đi những email chất lượng là chưa đủ. Doanh nghiệp cần nắm bắt và phân tích các chỉ số quan trọng để đánh giá hiệu quả của chiến dịch, từ đó đưa ra những điều chỉnh kịp thời và hợp lý. Trong bài viết này, chúng ta sẽ cùng khám phá những chỉ số cốt lõi như tỷ lệ bounce rate, open rate, click-through rate, và conversion rate những yếu tố then chốt giúp bạn hiểu rõ hơn về mức độ thành công của các chiến dịch email marketing của mình."
+,"metricsInEmailMarketing": "Các chỉ số trong Email Marketing",
+    "bounceRateTitle": "1. Tỷ lệ Bounce",
+    "bounceRateDescription": "Tỷ lệ bounce đo lường tỷ lệ phần trăm email không thể được gửi thành công đến hộp thư của người nhận. Chỉ số này phản ánh chất lượng của danh sách email mà bạn đã thu thập. Tỷ lệ bounce được tính bằng cách chia số lượng email không gửi được cho tổng số email đã gửi, sau đó nhân kết quả với 100 để ra phần trăm. Tỷ lệ bounce cao cho thấy chất lượng địa chỉ email trong danh sách của bạn kém, có thể do các địa chỉ không tồn tại, sai chính tả, hoặc không còn hoạt động.",
+    "bounceRateFormula": "Tỷ lệ Bounce =",
+    "undeliveredEmails": "Số lượng email không gửi được",
+    "totalEmailsSent": "Tổng số email đã gửi",
+    "openRateTitle": "2. Tỷ lệ mở",
+    "openRateDescription": "Tỷ lệ mở được tính dựa trên tỷ lệ phần trăm số người mở email trong tổng số email đã được gửi thành công. Nội dung của dòng Tiêu đề đóng vai trò quan trọng trong việc ảnh hưởng đến tỷ lệ mở. Một dòng tiêu đề hấp dẫn hoặc có tên của người nhận có thể khơi dậy sự tò mò và khuyến khích người nhận mở email.",
+    "openRateFormula": "Tỷ lệ Mở =",
+    "openedEmails": "Số người mở email",
+    "successfullyDeliveredEmails": "Tổng số email đã gửi thành công",
+    "ctrTitle": "3. Tỷ lệ nhấp (CTR)",
+    "ctrDescription": "Tỷ lệ nhấp là tỷ lệ phần trăm người nhận đã nhấp vào một hoặc nhiều liên kết trong email. CTR giúp bạn đánh giá mức độ tương tác của người nhận với nội dung email của bạn. Nếu CTR thấp, có thể nội dung hoặc lời kêu gọi hành động (CTA) trong email của bạn chưa đủ hấp dẫn.",
+    "ctrFormula": "Tỷ lệ nhấp (CTR) =",
+    "numberOfClicks": "Số lần nhấp vào liên kết",
+    "openedEmails": "Số người đã mở email",
+    "conversionTitle": "4. Tỷ lệ chuyển đổi",
+    "conversionDescription": "Tỷ lệ chuyển đổi là tỷ lệ phần trăm người nhận đã hoàn thành một hành động mong muốn sau khi nhấp vào liên kết trong email, chẳng hạn như mua hàng, đăng ký, hoặc tải xuống tài liệu. Đây là một chỉ số quan trọng để đo lường hiệu quả cuối cùng của chiến dịch email marketing, vì nó cho thấy có bao nhiêu người từ email đã trở thành khách hàng thực sự.",
+    "conversionFormula": "Tỷ lệ chuyển đổi =",
+    "numberOfConversions": "Số lượt chuyển đổi",
+    "emailMarketingToolsTitle": "Công cụ Email Marketing",
+    "mailchimpTitle": "1. Mailchimp",
+    "mailchimpDescription": "Mailchimp là một trong những công cụ email marketing phổ biến nhất. Nó cung cấp các báo cáo chi tiết về tỷ lệ bounce, tỷ lệ mở email, tỷ lệ nhấp chuột và tỷ lệ chuyển đổi. Giao diện thân thiện với người dùng và các tính năng tự động hóa của nó giúp dễ dàng quản lý và theo dõi các chiến dịch.",
+    "mailchimpImage": "Hình ảnh Mailchimp",
+    "hubspotTitle": "2. HubSpot",
+    "hubspotDescription": "HubSpot là một nền tảng inbound marketing toàn diện bao gồm cả các tính năng email marketing. Nó cho phép bạn theo dõi hiệu suất của các chiến dịch email với các báo cáo chi tiết về tỷ lệ mở email, tỷ lệ nhấp chuột và tỷ lệ chuyển đổi. HubSpot cũng cung cấp các công cụ để phân tích hành vi người dùng và tối ưu hóa các chiến dịch.",
+    "hubspotImage": "Hình ảnh HubSpot",
+    "conclusionTitle": "Kết luận",
+    "conclusionDescription": "Hy vọng bài viết này cung cấp một cái nhìn tổng quan về các chỉ số chính trong email marketing và giới thiệu một số công cụ hữu ích giúp bạn quản lý và đo lường hiệu quả của các chiến dịch của mình. Để biết thêm nhiều chủ đề khác, đừng bỏ lỡ các cập nhật mới nhất trên blog của tôi."
+,
+"metricsInEmailMarketing": "Các chỉ số trong Email Marketing",
+    "emailMarketingTools": "Công cụ Email Marketing",
+    "measuringEffectivenessInEmailMarketing": "Đo lường Hiệu quả trong Email Marketing"
 }

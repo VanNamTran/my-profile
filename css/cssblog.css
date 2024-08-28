@@ -336,3 +336,30 @@ th {
     
     
 }
+/* ------ */
+.formula {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.2em;
+}
+.fraction {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+.fraction > span {
+    display: block;
+    border-top: 1px solid #000;
+    padding: 0 2px;
+}
+.fraction > span > span {
+    display: block;
+    padding: 0 2px;
+}
+
+.float-container {
+    overflow: hidden; /* Đảm bảo chứa hình ảnh nổi bên trong khối văn bản */
+}
+.float-image {
+    float: left; /* Đặt hình ảnh ở phía bên trái */
+    width: 100px; /* Kích thước của hình ảnh */
+}
