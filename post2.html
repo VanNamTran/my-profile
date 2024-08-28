@@ -2,97 +2,231 @@
 <html lang="en">
 
 <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="css/cssblog.css">
-      <title>Tran Van Nam</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cssblog.css">
+    <title>What's the Difference Between To, CC, and BCC When Sending an Email?</title>
+    <style>
+        .table_container {
+            width: 100%;
+            overflow-x: auto;
+        }
+        .contenxx{
+            overflow-x: auto;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            min-width: 600px;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 
 <body>
-      <div class="container">
-            <div id="header2"></div>
-            <button id="scrollToTopBtn" title="Go to top">
-                  <svg class="icon" viewBox="0 -5 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 4L6 10L7.41 11.41L12 6.83L16.59 11.41L18 10L12 4Z" fill="currentColor" />
-                  </svg>
-            </button>
+    <div class="container">
+        <div id="header2"></div>
+        <button id="scrollToTopBtn" title="Go to top">
+            <svg class="icon" viewBox="0 -5 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 4L6 10L7.41 11.41L12 6.83L16.59 11.41L18 10L12 4Z" fill="currentColor" />
+            </svg>
+        </button>
 
-            <div class="container-main">
-                  <div id="nav"></div>
-                  <main id="content">
-                        <div class="content">
-                              <h1 data-translate="blogWelcomeTitle"></h1>
-                              <p data-translate="blogWelcomeIntro1"></p>
-                              <p data-translate="blogWelcomeIntro2"></p>
-                              <p data-translate="blogWelcomeIntro3"></p>
-                              <p data-translate="blogWelcomeIntro4"></p>
-                              <p data-translate="blogWelcomeIntro1"></p>
-                              <p data-translate="blogWelcomeIntro2"></p>
-                              <p data-translate="blogWelcomeIntro3"></p>
-                              <p data-translate="blogWelcomeIntro4"></p>
+        <div class="container-main">
+            <div id="nav"></div>
+            <main id="content">
+                <div class="contenxx">
+                  <p>0000000</p>
 
-                              <!-- Add IDs to the sections for the catalog -->
-                              <h2 id="section1">Section 1</h2>
-                              <p>...</p>
-                              <p data-translate="blogWelcomeIntro1"></p>
-                              <p data-translate="blogWelcomeIntro2"></p>
-                              <p data-translate="blogWelcomeIntro3"></p>
-                              <p data-translate="blogWelcomeIntro4"></p>
-                              <p data-translate="blogWelcomeIntro1"></p>
-                              <p data-translate="blogWelcomeIntro2"></p>
-                              <p data-translate="blogWelcomeIntro3"></p>
-                              <p data-translate="blogWelcomeIntro4"></p>
-                              <h2 id="section2">Section 2</h2>
-                              <p>...</p>
-                              <p data-translate="blogWelcomeIntro1"></p>
-                              <p data-translate="blogWelcomeIntro2"></p>
-                              <p data-translate="blogWelcomeIntro3"></p>
-                              <p data-translate="blogWelcomeIntro4"></p>
-                              <p data-translate="blogWelcomeIntro1"></p>
-                              <p data-translate="blogWelcomeIntro2"></p>
-                              <p data-translate="blogWelcomeIntro3"></p>
-                              <p data-translate="blogWelcomeIntro4"></p>
-                              <h2 id="section3">Section 3</h2>
-                              <p>...</p>
-                              <p data-translate="blogWelcomeIntro1"></p>
-                              <p data-translate="blogWelcomeIntro2"></p>
-                              <p data-translate="blogWelcomeIntro3"></p>
-                              <p data-translate="blogWelcomeIntro4"></p>
-                              <p data-translate="blogWelcomeIntro1"></p>
-                              <p data-translate="blogWelcomeIntro2"></p>
-                              <p data-translate="blogWelcomeIntro3"></p>
-                              <p data-translate="blogWelcomeIntro4"></p>
-                              <h2 id="section4">Section 4</h2>
-                              <p>...</p>
-                              <p data-translate="blogWelcomeIntro1"></p>
-                              <p data-translate="blogWelcomeIntro2"></p>
-                              <p data-translate="blogWelcomeIntro3"></p>
-                              <p data-translate="blogWelcomeIntro4"></p>
-                              <p data-translate="blogWelcomeIntro1"></p>
-                              <p data-translate="blogWelcomeIntro2"></p>
-                              <p data-translate="blogWelcomeIntro3"></p>
-                              <p data-translate="blogWelcomeIntro4"></p>
-                        </div>
-                        <div class="catalog"> 
-                              <p style="font-size: 20px;font-weight: bold;margin: 0;">On this page</p>
-                              <hr>
-                              <ul>
-                                    <li><a href="#section1">Section 1</a></li>
-                                    <li><a href="#section2">Section 2</a></li>
-                                    <li><a href="#section3">Section 3</a></li>
-                                    <li><a href="#section4">Section 4</a></li>
-                              </ul>
-                        </div>
-                  </main>
+                        <table>
+                            <tr>
+                                <th data-translate="recipientField">Trường nhận</th>
+                                <th data-translate="seesTo">Thấy "To"</th>
+                                <th data-translate="seesCC">Thấy "CC"</th>
+                                <th data-translate="seesBCC">Thấy "BCC"</th>
+                                <th data-translate="seenByTo">Thấy bởi "To"</th>
+                                <th data-translate="seenByCC">Thấy bởi "CC"</th>
+                                <th data-translate="seenByBCC">Thấy bởi "BCC"</th>
+                                <th data-translate="recipientField">Trường nhận</th>
+                                <th data-translate="seesTo">Thấy "To"</th>
+                                <th data-translate="seesCC">Thấy "CC"</th>
+                                <th data-translate="seesBCC">Thấy "BCC"</th>
+                                <th data-translate="seenByTo">Thấy bởi "To"</th>
+                                <th data-translate="seenByCC">Thấy bởi "CC"</th>
+                                <th data-translate="seenByBCC">Thấy bởi "BCC"</th>
+                            </tr>
+                            <tr>
+                                <td>To</td>
+                                <td data-translate="yes">Yes</td>
+                                <td data-translate="yes">Yes</td>
+                                <td data-translate="no">No</td>
+                                <td data-translate="yes">Yes</td>
+                                <td data-translate="yes">Yes</td>
+                                <td data-translate="yes">Yes</td>
+                            </tr>
+                            <tr>
+                                <td>CC</td>
+                                <td data-translate="yes">Yes</td>
+                                <td data-translate="yes">Yes</td>
+                                <td data-translate="no">No</td>
+                                <td data-translate="yes">Yes</td>
+                                <td data-translate="yes">Yes</td>
+                                <td data-translate="yes">Yes</td>
+                            </tr>
+                            <tr>
+                                <td>BCC</td>
+                                <td data-translate="yes">Yes</td>
+                                <td data-translate="yes">Yes</td>
+                                <td data-translate="no">No</td>
+                                <td data-translate="no">No</td>
+                                <td data-translate="no">No</td>
+                                <td data-translate="no">No</td>
+                            </tr>
+                            <tr>
+                                <td data-translate="senderField">Người gửi</td>
+                                <td data-translate="yes">Yes</td>
+                                <td data-translate="yes">Yes</td>
+                                <td data-translate="yes">Yes</td>
+                                <td data-translate="yes">Yes</td>
+                                <td data-translate="yes">Yes</td>
+                                <td data-translate="yes">Yes</td>
+                            </tr>
+                        </table>
+                        <table>
+                              <tr>
+                                  <th data-translate="recipientField">Trường nhận</th>
+                                  <th data-translate="seesTo">Thấy "To"</th>
+                                  <th data-translate="seesCC">Thấy "CC"</th>
+                                  <th data-translate="seesBCC">Thấy "BCC"</th>
+                                  <th data-translate="seenByTo">Thấy bởi "To"</th>
+                                  <th data-translate="seenByCC">Thấy bởi "CC"</th>
+                                  <th data-translate="seenByBCC">Thấy bởi "BCC"</th>
+                                  <th data-translate="recipientField">Trường nhận</th>
+                                  <th data-translate="seesTo">Thấy "To"</th>
+                                  
+                              </tr>
+                              <tr>
+                                  <td>To</td>
+                                  <td data-translate="yes">Yes</td>
+                                  <td data-translate="yes">Yes</td>
+                                  <td data-translate="no">No</td>
+                                  <td data-translate="yes">Yes</td>
+                                  <td data-translate="yes">Yes</td>
+                                  <td data-translate="yes">Yes</td>
+                              </tr>
+                              <tr>
+                                  <td>CC</td>
+                                  <td data-translate="yes">Yes</td>
+                                  <td data-translate="yes">Yes</td>
+                                  <td data-translate="no">No</td>
+                                  <td data-translate="yes">Yes</td>
+                                  <td data-translate="yes">Yes</td>
+                                  <td data-translate="yes">Yes</td>
+                              </tr>
+                              <tr>
+                                  <td>BCC</td>
+                                  <td data-translate="yes">Yes</td>
+                                  <td data-translate="yes">Yes</td>
+                                  <td data-translate="no">No</td>
+                                  <td data-translate="no">No</td>
+                                  <td data-translate="no">No</td>
+                                  <td data-translate="no">No</td>
+                              </tr>
+                              <tr>
+                                  <td data-translate="senderField">Người gửi</td>
+                                  <td data-translate="yes">Yes</td>
+                                  <td data-translate="yes">Yes</td>
+                                  <td data-translate="yes">Yes</td>
+                                  <td data-translate="yes">Yes</td>
+                                  <td data-translate="yes">Yes</td>
+                                  <td data-translate="yes">Yes</td>
+                              </tr>
+                          </table>
 
-            </div>
-            <div id="footer"></div>
-      </div>
-      <script src="js/load-compoments.js"></script>
-      <script src="js/functions.js"></script>
-      <script src="js/translate.js"></script>
-      <script src="js/scroll-spy.js"></script>
+                </div>
+                <div class="table_container">
+                  <table>
+                      <tr>
+                          <th data-translate="recipientField">Trường nhận</th>
+                          <th data-translate="seesTo">Thấy "To"</th>
+                          <th data-translate="seesCC">Thấy "CC"</th>
+                          <th data-translate="seesBCC">Thấy "BCC"</th>
+                          <th data-translate="seenByTo">Thấy bởi "To"</th>
+                          <th data-translate="seenByCC">Thấy bởi "CC"</th>
+                          <th data-translate="seenByBCC">Thấy bởi "BCC"</th>
+                      </tr>
+                      <tr>
+                          <td>To</td>
+                          <td data-translate="yes">Yes</td>
+                          <td data-translate="yes">Yes</td>
+                          <td data-translate="no">No</td>
+                          <td data-translate="yes">Yes</td>
+                          <td data-translate="yes">Yes</td>
+                          <td data-translate="yes">Yes</td>
+                      </tr>
+                      <tr>
+                          <td>CC</td>
+                          <td data-translate="yes">Yes</td>
+                          <td data-translate="yes">Yes</td>
+                          <td data-translate="no">No</td>
+                          <td data-translate="yes">Yes</td>
+                          <td data-translate="yes">Yes</td>
+                          <td data-translate="yes">Yes</td>
+                      </tr>
+                      <tr>
+                          <td>BCC</td>
+                          <td data-translate="yes">Yes</td>
+                          <td data-translate="yes">Yes</td>
+                          <td data-translate="no">No</td>
+                          <td data-translate="no">No</td>
+                          <td data-translate="no">No</td>
+                          <td data-translate="no">No</td>
+                      </tr>
+                      <tr>
+                          <td data-translate="senderField">Người gửi</td>
+                          <td data-translate="yes">Yes</td>
+                          <td data-translate="yes">Yes</td>
+                          <td data-translate="yes">Yes</td>
+                          <td data-translate="yes">Yes</td>
+                          <td data-translate="yes">Yes</td>
+                          <td data-translate="yes">Yes</td>
+                      </tr>
+                  </table>
+
+              </div>
+
+
+
+                <div class="catalog">
+                    <p style="font-size: 20px;font-weight: bold;margin: 0;" data-translate="TableOfContents">
+                        On this page</p>
+                    <hr>
+                    <ul>
+                        <li><a href="#section1" data-translate="emailDifferencesTitle"></a></li>
+                        <li><a href="#section2" data-translate="whenToUseCCBCC"></a></li>
+                        <li><a href="#section3" data-translate="summaryTitle"></a></li>
+                    </ul>
+                </div>
+            </main>
+
+        </div>
+        <div id="footer"></div>
+    </div>
+    <script src="js/load-compoments.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/translate.js"></script>
+    <script src="js/scroll-spy.js"></script>
 </body>
 
 </html>

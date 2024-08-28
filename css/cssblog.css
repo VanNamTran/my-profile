@@ -1,16 +1,18 @@
 body.no-scroll {
     overflow: hidden;
-    padding-right: 17px; 
+    padding-right: 17px;
 }
-.container-main{
+
+.container-main {
     display: grid;
     grid-template-areas: "sidebar main";
     grid-template-columns: 1fr 5fr;
     gap: 1.5rem;
     margin-top: 60px;
 }
+
 .menu-toggle {
-    display: none; 
+    display: none;
     background: var(--white-color);
     border-radius: 5px;
     color: var(--blue-color);
@@ -19,22 +21,26 @@ body.no-scroll {
     font-size: 24px;
     cursor: pointer;
 }
-.blog div:hover{
-    background-color: var(--blue-color)!important;
+
+.blog div:hover {
+    background-color: var(--blue-color) !important;
 }
+
 #scrollToTopBtn {
-    background-color: var(--blue-color)!important;
+    background-color: var(--blue-color) !important;
 }
 
 #scrollToTopBtn:hover {
-    background-color: var(--blue-color-light)!important;
+    background-color: var(--blue-color-light) !important;
 }
-  .sidebar strong {
+
+.sidebar strong {
     font-size: 1.25rem;
     font-weight: bold;
     background-color: var(--white-color);
 }
-  .sidebar {
+
+.sidebar {
     position: sticky;
     top: 5rem;
     display: block !important;
@@ -43,22 +49,25 @@ body.no-scroll {
     margin-left: -.25rem;
     overflow-y: auto;
 }
+
 .sidebar ul {
-    list-style-type: none; /* Xóa gạch đầu dòng mặc định */
+    list-style-type: none;
     padding: 0;
     margin-top: 20px;
 }
 
 .sidebar ul li {
-    border-top: 2px solid var(--gray-color); /* Gạch ngang ở đầu dòng */
+    border-top: 2px solid var(--gray-color);
     padding-top: 0.5rem;
 }
-.sidebar ul li:hover{
+
+.sidebar ul li:hover {
     background-color: #93e0fc;
 }
+
 .sidebar ul li a {
     text-decoration: none;
-    color: #333; /* Màu chữ của liên kết */
+    color: #333;
     display: flex;
     align-items: center;
     font-size: 1rem;
@@ -66,12 +75,13 @@ body.no-scroll {
 
 
 .sidebar ul li a img {
-    width: 50px; /* Chiều rộng của hình ảnh */
-    height: 50px; /* Chiều cao của hình ảnh */
+    width: 50px;
+    height: 50px;
     object-fit: cover;
-    border-radius: 4px; /* Bo góc cho hình ảnh */
-    margin-right: 1rem; /* Khoảng cách giữa hình ảnh và văn bản */
+    border-radius: 4px;
+    margin-right: 1rem;
 }
+
 .content {
     grid-area: content;
 }
@@ -82,19 +92,21 @@ body.no-scroll {
 
 main {
     display: grid;
-    grid-template-areas: 
-    "content catalog";
+    grid-template-areas:
+        "content catalog";
     grid-template-rows: auto 1fr;
     grid-template-columns: 4fr 1fr;
     gap: 1.5rem;
 }
-.catalog{
+
+.catalog {
     position: sticky;
     top: 5rem;
     right: 0;
     height: calc(100vh - 7rem);
     overflow-y: auto;
 }
+
 .catalog ul {
     list-style: none;
     padding: 0;
@@ -117,8 +129,9 @@ main {
     text-decoration: none;
     color: var(--gray-color);
     transition: color 0.3s;
-    padding:.125rem 0 .125rem .75rem;
-    border-left:.125rem solid transparent;;
+    padding: .125rem 0 .125rem .75rem;
+    border-left: .125rem solid transparent;
+    ;
 }
 
 .catalog ul li a:hover {
@@ -127,79 +140,40 @@ main {
 
 .catalog ul li a.active {
     font-weight: bold;
-    color:var(--blue-color);
+    color: var(--blue-color);
     border-left-color: var(--blue-color);
 }
 
 .catalog ul li:last-child {
     margin-bottom: 0;
 }
-@media screen and (max-width: 1000px) {
-    .container-main{
-        display: grid;
-        grid-template-areas: " main";
-        grid-template-columns: auto;
-        gap: 1.5rem;
-        margin-top: 60px;
-    }
-    main {
-        grid-template-areas:
-        "catalog"
-        "content";
-        grid-template-rows: auto auto;
-        grid-template-columns: 1fr;
-    }
-    .catalog {
-        position: relative; 
-        top: 20px;
-        right: auto;
-        height: auto;
-        margin: 0 auto;
-        padding: 1rem;
-        overflow-y: auto;
-        border: 1px solid var(--gray-color);
-        border-radius: 5px;
-    }
-    #nav{
-        display: none;
-    }
-    .menu-toggle {
-        display: block;
-    }
-    
-    #main-nav.show {
-        display: block;
-        left: 0; 
-    }
-    .content {
 
-        padding: 0rem;
-    }
-}
 .overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.7); 
-    z-index: 900; 
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 900;
     display: none;
 }
 
 .overlay.visible {
-    display: block; 
+    display: block;
 }
+
 #main-nav {
     position: fixed;
     display: none;
     background: #fff;
-    height: 100vh; 
+    height: 100vh;
     max-width: 320px;
     overflow-y: auto;
     z-index: 1000;
     border-left: 1px solid #ccc;
 }
+
 .content {
     line-height: 1.6;
     color: #333;
@@ -233,25 +207,29 @@ main {
     text-decoration: underline;
     color: var(--blue-color);
 }
+
 .content img {
-    max-width: 100%; 
-    height: auto; 
-    display: block; 
-    margin: 1rem 0; 
-    border-radius: 8px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.start-topic{
+
+.start-topic {
     border-left: 4px solid var(--blue-color);
     background: rgba(56, 167, 255, 0.10);
-    line-height: 2; 
+    line-height: 2;
     padding: 1rem;
 }
-.section{
+
+.section {
     border-left: 4px solid var(--blue-color);
     padding-left: 1rem;
     color: var(--blue-color);
 }
+
 .images-box {
     display: flex;
     flex-wrap: wrap;
@@ -259,6 +237,22 @@ main {
     align-items: stretch;
     gap: 16px;
     padding: 20px;
+}
+
+.table_container {
+    padding: 0;
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
 }
 
 .image {
@@ -285,4 +279,60 @@ main {
 
 
 
+th {
+    background-color: #f2f2f2;
+}
 
+@media screen and (max-width: 1000px) {
+    .container-main {
+        display: grid;
+        grid-template-areas: " main";
+        grid-template-columns: auto;
+        gap: 1.5rem;
+        margin-top: 60px;
+    }
+
+    main {
+        grid-template-areas:
+            "catalog"
+            "content";
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr;
+    }
+
+    .catalog {
+        position: relative;
+        top: 20px;
+        right: auto;
+        height: auto;
+        margin: 0 auto;
+        padding: 1rem;
+        overflow-y: auto;
+        border: 1px solid var(--gray-color);
+        border-radius: 5px;
+    }
+
+    #nav {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    #main-nav.show {
+        display: block;
+        left: 0;
+    }
+
+    .content {
+        padding: 0rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    .table{
+        max-width: 400px;
+    }
+    
+    
+}
