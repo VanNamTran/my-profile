@@ -211,7 +211,6 @@
     "openRateTitle": "2. Tỷ lệ mở",
     "openRateDescription": "Tỷ lệ mở được tính dựa trên tỷ lệ phần trăm số người mở email trong tổng số email đã được gửi thành công. Nội dung của dòng Tiêu đề đóng vai trò quan trọng trong việc ảnh hưởng đến tỷ lệ mở. Một dòng tiêu đề hấp dẫn hoặc có tên của người nhận có thể khơi dậy sự tò mò và khuyến khích người nhận mở email.",
     "openRateFormula": "Tỷ lệ Mở =",
-    "openedEmails": "Số người mở email",
     "successfullyDeliveredEmails": "Tổng số email đã gửi thành công",
     "ctrTitle": "3. Tỷ lệ nhấp (CTR)",
     "ctrDescription": "Tỷ lệ nhấp là tỷ lệ phần trăm người nhận đã nhấp vào một hoặc nhiều liên kết trong email. CTR giúp bạn đánh giá mức độ tương tác của người nhận với nội dung email của bạn. Nếu CTR thấp, có thể nội dung hoặc lời kêu gọi hành động (CTA) trong email của bạn chưa đủ hấp dẫn.",
@@ -229,10 +228,38 @@
     "hubspotTitle": "2. HubSpot",
     "hubspotDescription": "HubSpot là một nền tảng inbound marketing toàn diện bao gồm cả các tính năng email marketing. Nó cho phép bạn theo dõi hiệu suất của các chiến dịch email với các báo cáo chi tiết về tỷ lệ mở email, tỷ lệ nhấp chuột và tỷ lệ chuyển đổi. HubSpot cũng cung cấp các công cụ để phân tích hành vi người dùng và tối ưu hóa các chiến dịch.",
     "hubspotImage": "Hình ảnh HubSpot",
-    "conclusionTitle": "Kết luận",
     "conclusionDescription": "Hy vọng bài viết này cung cấp một cái nhìn tổng quan về các chỉ số chính trong email marketing và giới thiệu một số công cụ hữu ích giúp bạn quản lý và đo lường hiệu quả của các chiến dịch của mình. Để biết thêm nhiều chủ đề khác, đừng bỏ lỡ các cập nhật mới nhất trên blog của tôi."
 ,
-"metricsInEmailMarketing": "Các chỉ số trong Email Marketing",
     "emailMarketingTools": "Công cụ Email Marketing",
-    "measuringEffectivenessInEmailMarketing": "Đo lường Hiệu quả trong Email Marketing"
+    "measuringEffectivenessInEmailMarketing": "Đo lường Hiệu quả trong Email Marketing",
+    "survivorshipBias": "Thiên lệch sống sót là một hiện tượng tâm lý thường xuyên ảnh hưởng đến cách chúng ta cảm nhận thành công và thất bại trong cuộc sống. Khi đánh giá các tình huống, bạn có thể chỉ tập trung vào các câu chuyện thành công trong khi bỏ qua những thất bại không được ghi lại. Hiểu về thiên lệch sống sót và cách nó làm biến dạng nhận thức có thể giúp bạn có cái nhìn toàn diện hơn về thực tế. Trong bài viết này, chúng ta sẽ khám phá khái niệm thiên lệch sống sót, làm rõ cách nó ảnh hưởng đến các phán đoán của chúng ta và cung cấp các phương pháp để tránh rơi vào cái bẫy nhận thức này, giúp bạn đưa ra các quyết định chính xác hơn."
+,"whatIsSurvivorshipBias": "Thiên lệch sống sót là gì?",
+    "survivorshipBiasDescription": "Thiên lệch sống sót là một loại thiên lệch xảy ra khi chúng ta chỉ tập trung vào các cá nhân hoặc đối tượng đã 'sống sót' qua một quy trình lựa chọn, trong khi bỏ qua những cá nhân hoặc đối tượng đã thất bại hoặc không còn tồn tại. Điều này dẫn đến một cái nhìn méo mó về toàn cảnh và có thể dẫn đến kết luận không chính xác.",
+    "theStoryOfOldObjects": "Câu chuyện về các đồ vật cũ",
+    "vintageMotorcyclesExample": "<b>Ví dụ về Xe máy cũ:</b> Nhiều người coi xe máy cũ từ các thập kỷ trước là biểu tượng của chất lượng và độ bền vì một số trong số chúng vẫn hoạt động tốt sau nhiều năm. Tuy nhiên, nhận thức này có thể là kết quả của thiên lệch sống sót, vì chỉ những xe máy được bảo trì tốt và may mắn tránh được các vấn đề lớn mới tồn tại đến ngày nay. Hàng ngàn xe máy khác đã bị hỏng, không được bảo trì đúng cách, hoặc bị vứt bỏ chưa bao giờ có cơ hội để chứng minh 'chất lượng' của chúng."
+,"oldElectronicsTitle": "Thiết bị điện tử cũ:",
+    "oldElectronicsDescription": "Nhiều người tin rằng các thiết bị điện tử cũ (như radio, TV và máy tính) có chất lượng cao hơn các thiết bị hiện đại vì một số trong số chúng vẫn hoạt động. Tuy nhiên, quan điểm này không tính đến các thiết bị đã hỏng hóc, bị thay thế hoặc không còn sử dụng."
+,"businessInvestment": "Kinh doanh và Đầu tư: Các nhà đầu tư có thể bị rơi vào cái bẫy của Thiên lệch sống sót khi chỉ tập trung vào các công ty thành công mà bỏ qua hàng ngàn công ty đã thất bại. Điều này có thể tạo ra ảo tưởng rằng thành công trong kinh doanh dễ đạt được hơn thực tế.",
+  "medicineHealth": "Y học và Sức khỏe: Khi nghiên cứu về tuổi thọ, nếu chỉ tập trung vào những người có tuổi thọ cao mà không cân nhắc đến những người đã qua đời sớm, có thể dẫn đến những kết luận không chính xác về các yếu tố ảnh hưởng đến tuổi thọ.",
+  "educationTraining": "Giáo dục và Đào tạo: Bằng cách chỉ nhìn vào các cá nhân thành công, chúng ta có thể bỏ qua những người đã thất bại và không hiểu được những thách thức mà họ gặp phải. Điều này có thể dẫn đến những lời khuyên không thực tế hoặc quá lạc quan.",
+  "survivorshipBiasPresence": "Thiên lệch sống sót vẫn tồn tại trong nhiều khía cạnh của cuộc sống hiện đại, ảnh hưởng đến cách chúng ta đánh giá thông tin và đưa ra quyết định.",
+  "healthLifestyle": "Sức khỏe và Lối sống",
+  "longevityImage": "Hình ảnh thể hiện người tuổi thọ cao",
+  "longevityDescription": "Tuổi thọ: Chúng ta thường nghe về những người sống đến 100 tuổi và coi lối sống hoặc chế độ ăn uống của họ là lý do cho sự sống lâu của họ. Tuy nhiên, những câu chuyện này thường bỏ qua nhiều người khác có lối sống tương tự nhưng không đạt được tuổi thọ dài như vậy. Thiên lệch sống sót ở đây có thể dẫn đến việc tin tưởng quá mức vào những phương pháp sống khỏe hoặc lối sống mà không xem xét đến các yếu tố khác như di truyền hoặc may mắn.",
+  "socialMedia": "Mạng xã hội",
+  "socialMediaImage": "Hình ảnh thể hiện ảnh hưởng của mạng xã hội",
+  "socialMediaDescription": "Ảnh hưởng của Những người nổi tiếng trên mạng xã hội: Trên các nền tảng như Facebook, YouTube, hoặc TikTok, chúng ta thường chỉ thấy những người nổi tiếng với hàng triệu người theo dõi và có thể nghĩ rằng việc trở thành người có ảnh hưởng trên mạng xã hội là dễ dàng. Tuy nhiên, Thiên lệch sống sót khiến chúng ta bỏ qua hàng triệu người khác đã cố gắng và thất bại trong việc thu hút một lượng theo dõi lớn. Điều này có thể dẫn đến ảo tưởng rằng việc trở nên nổi tiếng trên mạng xã hội chỉ yêu cầu một chút may mắn hoặc nỗ lực.",
+  "techStartups": "Các Startup Công nghệ",
+  "techStartupsImage": "Hình ảnh thể hiện các startup công nghệ",
+  "techStartupsDescription": "Thành công của Các Công ty Startup: Nhiều người ngưỡng mộ các startup công nghệ như Google, Facebook, hoặc Amazon và tin rằng việc bắt đầu một công ty là con đường chắc chắn đến thành công và sự giàu có. Tuy nhiên, thực tế là hầu hết các startup thất bại trong vài năm đầu tiên. Thiên lệch sống sót khiến chúng ta chỉ tập trung vào các câu chuyện thành công mà bỏ qua hàng ngàn công ty đã thất bại, dẫn đến việc đánh giá sai lầm về những rủi ro và thách thức liên quan đến việc bắt đầu một doanh nghiệp.",
+  "educationCareer": "Giáo dục và Nghề nghiệp",
+  "educationCareerImage": "Hình ảnh thể hiện giáo dục và nghề nghiệp",
+  "educationCareerDescription": "Những cá nhân thành công mà không có bằng cấp đại học: Chúng ta thường nghe về những người nổi tiếng như Steve Jobs hoặc Bill Gates đã đạt được thành công mà không hoàn thành bằng cấp đại học. Điều này có thể dẫn đến niềm tin rằng bằng cấp không cần thiết cho sự thành công. Tuy nhiên, đa số những người không có bằng cấp không đạt được thành công như vậy, và sự thật này thường bị bỏ qua."
+, "seekInformation": "Tìm kiếm thông tin từ nhiều nguồn: Đừng chỉ tập trung vào các ví dụ thành công, cũng nên xem xét các thất bại để có cái nhìn toàn diện hơn.",
+"analyzeSample": "Phân tích toàn bộ mẫu: Cố gắng thu thập và phân tích dữ liệu từ cả các trường hợp thành công và thất bại.",
+"beAwareBias": "Nhận thức về sự thiên lệch: Hiểu rằng Thiên lệch sống sót là một vấn đề phổ biến và luôn đặt câu hỏi liệu có những yếu tố nào có thể đã bị bỏ qua không."
+,"avoidSurvivorshipBias":"Cách tránh Thiên lệch sống sót",
+"impactOfSurvivorshipBias":"Ảnh Hưởng của Thiên lệch sống sót",
+"conclusionDescriptionSurvivorshipBias":"Thiên lệch sống sót là một hiện tượng phổ biến ảnh hưởng đến cách chúng ta nhận thức và đánh giá thành công cũng như thất bại trong nhiều lĩnh vực của cuộc sống. Từ các công ty khởi nghiệp, đầu tư, đến những câu chuyện thành công trên mạng xã hội và quyết định sức khỏe, thiên lệch này có thể dẫn đến những phán đoán sai lầm và kỳ vọng không thực tế. Để tránh rơi vào cái bẫy của thiên lệch sống sót, chúng ta cần có cái nhìn toàn diện về cả thành công và thất bại, đồng thời phân tích kỹ lưỡng các yếu tố ảnh hưởng đến kết quả. Chỉ khi đó, chúng ta mới có thể đưa ra quyết định thông minh và cân nhắc trong công việc cũng như cuộc sống hàng ngày. Tôi hy vọng bạn thấy bài viết này hữu ích. Để biết thêm các chủ đề khác, đừng bỏ lỡ các cập nhật trên blog của tôi."
+,"survivorshipBiasTitle":"Thiên lệch sống sót"
 }

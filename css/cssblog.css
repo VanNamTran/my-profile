@@ -357,9 +357,18 @@ th {
 }
 
 .float-container {
-    overflow: hidden; /* Đảm bảo chứa hình ảnh nổi bên trong khối văn bản */
+    overflow: hidden; 
+}
+.float-container img{
+    margin: 7px 15px 10px 0px;
 }
 .float-image {
     float: left; /* Đặt hình ảnh ở phía bên trái */
     width: 100px; /* Kích thước của hình ảnh */
+}
+.float-image2{
+    float: left; 
+    width: 200px;
+    height: 200px; 
+    
 }

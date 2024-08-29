@@ -218,7 +218,6 @@
     "ctrDescription": "Click-through rate is the percentage of recipients who clicked on one or more links within the email. CTR helps you assess the level of engagement that recipients have with your email content. If CTR is low, it could indicate that the content or call-to-action (CTA) in your email is not compelling enough.",
     "ctrFormula": "Click-Through Rate (CTR) =",
     "numberOfClicks": "Number of clicks on links",
-    "openedEmails": "Number of people who opened the email",
     "conversionTitle": "4. Conversion Rate",
     "conversionDescription": "Conversion rate is the percentage of recipients who completed a desired action after clicking on a link in the email, such as making a purchase, signing up, or downloading a document. This is a crucial metric for measuring the ultimate effectiveness of an email marketing campaign, as it shows how many people from the email actually became real customers.",
     "conversionFormula": "Conversion Rate =",
@@ -230,9 +229,39 @@
     "hubspotTitle": "2. HubSpot",
     "hubspotDescription": "HubSpot is a comprehensive inbound marketing platform that includes email marketing features. It allows you to track the performance of your email campaigns with detailed reports on open rate, click-through rate, and conversion rate. HubSpot also offers tools to analyze user behavior and optimize campaigns.",
     "hubspotImage": "HubSpot Image",
-    "conclusionTitle": "Conclusion",
     "conclusionDescription": "I hope this article provides an overview of the key metrics in email marketing and introduces some useful tools to help you manage and measure the effectiveness of your campaigns. For more topics, don’t miss out on the latest updates on my blog.",
-    "metricsInEmailMarketing": "Metrics in Email Marketing",
     "emailMarketingTools": "Email Marketing Tools",
-    "measuringEffectivenessInEmailMarketing": "Measuring Effectiveness in Email Marketing"
+    "measuringEffectivenessInEmailMarketing": "Measuring Effectiveness in Email Marketing",
+"survivorshipBias": "Survivorship bias is a psychological phenomenon that frequently affects how we perceive success and failure in life. When evaluating situations, you might focus only on success stories while overlooking unrecorded failures. Understanding survivorship bias and how it distorts perception can help you gain a more comprehensive view of reality. In this article, we will explore the concept of survivorship bias, clarify how it impacts our judgments, and provide methods to avoid falling into this cognitive trap, enabling you to make more accurate and thoughtful decisions."
+,"whatIsSurvivorshipBias": "What is Survivorship Bias?",
+    "survivorshipBiasDescription": "Survivorship bias is a type of bias that occurs when one focuses only on individuals or objects that have 'survived' a selection process, while ignoring those that have failed or no longer exist. This leads to a distorted view of the overall picture and can result in inaccurate conclusions.",
+    "theStoryOfOldObjects": "The Story of Old Objects",
+    "vintageMotorcyclesExample": "<b>Example of Vintage Motorcycles:</b> Many people view vintage motorcycles from past decades as symbols of quality and durability because some of them are still functioning well after many years. However, this perception may be the result of survivorship bias, as only the motorcycles that were well-maintained and fortunate enough to avoid major issues have survived to this day. Thousands of other motorcycles that broke down, were not properly maintained, or were discarded never had the chance to demonstrate their 'quality.'"
+,"oldElectronicsTitle": "Old Electronics:",
+    "oldElectronicsDescription": "Many people believe that old electronic devices (such as radios, TVs, and computers) are of higher quality than modern devices because some of them are still functioning. However, this view does not account for the devices that have broken down, been replaced, or are no longer in use."
+,"businessInvestment": "Business and Investment: Investors may fall prey to survivorship bias when they only focus on successful companies while overlooking the thousands of companies that have failed. This can create the illusion that success in business is easier to achieve than it actually is.",
+  "medicineHealth": "Medicine and Health: When studying longevity, focusing only on those who live long lives without considering those who died early can lead to inaccurate conclusions about the factors that influence lifespan.",
+  "educationTraining": "Education and Training: By only looking at successful individuals, we may overlook those who have failed and fail to understand the challenges they faced. This can result in unrealistic or overly optimistic advice.",
+  "survivorshipBiasPresence": "Survivorship bias is still present in many aspects of modern life, affecting how we evaluate information and make decisions.",
+  "healthLifestyle": "Health and Lifestyle",
+  "longevityImage": "Image showing longevity",
+  "longevityDescription": "Longevity: We often hear about people who live to be 100 years old and view their lifestyle or diet as the reason for their longevity. However, these stories often overlook many others who lived a similar lifestyle but did not achieve such a long life. Survivorship bias in this context can lead to an overreliance on certain health practices or lifestyle choices without considering other factors such as genetics or luck.",
+  "socialMedia": "Social Media",
+  "socialMediaImage": "Image showing social media influence",
+  "socialMediaDescription": "Influence of Social Media Celebrities: On platforms like Facebook, YouTube, or TikTok, we often only see celebrities with millions of followers and might think that becoming a social media influencer is easy. However, survivorship bias causes us to overlook the millions of others who have tried and failed to attract a large following. This can lead to the illusion that becoming famous on social media only requires a bit of luck or effort.",
+  "techStartups": "Tech Startups",
+  "techStartupsImage": "Image showing tech startups",
+  "techStartupsDescription": "Success of Startup Companies: Many people admire tech startups like Google, Facebook, or Amazon and believe that starting a company is a sure path to success and wealth. However, the reality is that most startups fail within the first few years. Survivorship bias causes us to focus only on the success stories while overlooking the thousands of companies that have failed, leading to a misjudgment of the risks and challenges involved in starting a business.",
+  "educationCareer": "Education and Career",
+  "educationCareerImage": "Image showing education and career",
+  "educationCareerDescription": "Successful Individuals Without a College Degree: We often hear about famous people like Steve Jobs or Bill Gates who achieved success without completing a college degree. This can lead to the belief that a degree is not necessary for success. However, the majority of people without a degree do not achieve such success, and this fact is often overlooked."
+,"seekInformation": "Seek Information from Multiple Sources: Don't just focus on successful examples; also consider failures to gain a more comprehensive view.",
+  "analyzeSample": "Analyze the Entire Sample: Try to gather and analyze data from both successful and unsuccessful cases.",
+  "beAwareBias": "Be Aware of Bias: Understand that survivorship bias is a common issue and always question whether there are factors that might have been overlooked."
+,"avoidSurvivorshipBias":"How to avoid Survivorship bias?",
+"impactOfSurvivorshipBias":"The Impact of Survivorship Bias",
+"conclusionDescriptionSurvivorshipBias":"Survivorship bias is a common phenomenon that affects how we perceive and evaluate success and failure in many areas of life. From startups, investments, to success stories on social media and health decisions, this bias can lead to misguided judgments and unrealistic expectations. To avoid falling into the trap of survivorship bias, we need to take a comprehensive view of both successes and failures, while thoroughly analyzing the factors that influence outcomes. Only then can we make informed and well-considered decisions in both work and everyday life. I hope you find this article helpful. For more topics, don't miss the updates on my blog."
+,"survivorshipBiasTitle":"Survivorship bias"
+
+
 }
