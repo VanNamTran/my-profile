@@ -1,232 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/cssblog.css">
-    <title>What's the Difference Between To, CC, and BCC When Sending an Email?</title>
-    <style>
-        .table_container {
-            width: 100%;
-            overflow-x: auto;
-        }
-        .contenxx{
-            overflow-x: auto;
-        }
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            min-width: 600px;
-        }
-
-        th,
-        td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: center;
-        }
-
-        th {
-            background-color: #f2f2f2;
-        }
-    </style>
+    <title>Tỷ giá hối đoái</title>
 </head>
-
 <body>
-    <div class="container">
-        <div id="header2"></div>
-        <button id="scrollToTopBtn" title="Go to top">
-            <svg class="icon" viewBox="0 -5 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 4L6 10L7.41 11.41L12 6.83L16.59 11.41L18 10L12 4Z" fill="currentColor" />
-            </svg>
-        </button>
+    <h1>Tỷ giá hối đoái tại DongA Bank</h1>
+    <div id="exchange-rate"></div>
 
-        <div class="container-main">
-            <div id="nav"></div>
-            <main id="content">
-                <div class="contenxx">
-                  <p>0000000</p>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const exchangeRateContainer = document.getElementById('exchange-rate');
 
-                        <table>
-                            <tr>
-                                <th data-translate="recipientField">Trường nhận</th>
-                                <th data-translate="seesTo">Thấy "To"</th>
-                                <th data-translate="seesCC">Thấy "CC"</th>
-                                <th data-translate="seesBCC">Thấy "BCC"</th>
-                                <th data-translate="seenByTo">Thấy bởi "To"</th>
-                                <th data-translate="seenByCC">Thấy bởi "CC"</th>
-                                <th data-translate="seenByBCC">Thấy bởi "BCC"</th>
-                                <th data-translate="recipientField">Trường nhận</th>
-                                <th data-translate="seesTo">Thấy "To"</th>
-                                <th data-translate="seesCC">Thấy "CC"</th>
-                                <th data-translate="seesBCC">Thấy "BCC"</th>
-                                <th data-translate="seenByTo">Thấy bởi "To"</th>
-                                <th data-translate="seenByCC">Thấy bởi "CC"</th>
-                                <th data-translate="seenByBCC">Thấy bởi "BCC"</th>
-                            </tr>
-                            <tr>
-                                <td>To</td>
-                                <td data-translate="yes">Yes</td>
-                                <td data-translate="yes">Yes</td>
-                                <td data-translate="no">No</td>
-                                <td data-translate="yes">Yes</td>
-                                <td data-translate="yes">Yes</td>
-                                <td data-translate="yes">Yes</td>
-                            </tr>
-                            <tr>
-                                <td>CC</td>
-                                <td data-translate="yes">Yes</td>
-                                <td data-translate="yes">Yes</td>
-                                <td data-translate="no">No</td>
-                                <td data-translate="yes">Yes</td>
-                                <td data-translate="yes">Yes</td>
-                                <td data-translate="yes">Yes</td>
-                            </tr>
-                            <tr>
-                                <td>BCC</td>
-                                <td data-translate="yes">Yes</td>
-                                <td data-translate="yes">Yes</td>
-                                <td data-translate="no">No</td>
-                                <td data-translate="no">No</td>
-                                <td data-translate="no">No</td>
-                                <td data-translate="no">No</td>
-                            </tr>
-                            <tr>
-                                <td data-translate="senderField">Người gửi</td>
-                                <td data-translate="yes">Yes</td>
-                                <td data-translate="yes">Yes</td>
-                                <td data-translate="yes">Yes</td>
-                                <td data-translate="yes">Yes</td>
-                                <td data-translate="yes">Yes</td>
-                                <td data-translate="yes">Yes</td>
-                            </tr>
-                        </table>
-                        <table>
-                              <tr>
-                                  <th data-translate="recipientField">Trường nhận</th>
-                                  <th data-translate="seesTo">Thấy "To"</th>
-                                  <th data-translate="seesCC">Thấy "CC"</th>
-                                  <th data-translate="seesBCC">Thấy "BCC"</th>
-                                  <th data-translate="seenByTo">Thấy bởi "To"</th>
-                                  <th data-translate="seenByCC">Thấy bởi "CC"</th>
-                                  <th data-translate="seenByBCC">Thấy bởi "BCC"</th>
-                                  <th data-translate="recipientField">Trường nhận</th>
-                                  <th data-translate="seesTo">Thấy "To"</th>
-                                  
-                              </tr>
-                              <tr>
-                                  <td>To</td>
-                                  <td data-translate="yes">Yes</td>
-                                  <td data-translate="yes">Yes</td>
-                                  <td data-translate="no">No</td>
-                                  <td data-translate="yes">Yes</td>
-                                  <td data-translate="yes">Yes</td>
-                                  <td data-translate="yes">Yes</td>
-                              </tr>
-                              <tr>
-                                  <td>CC</td>
-                                  <td data-translate="yes">Yes</td>
-                                  <td data-translate="yes">Yes</td>
-                                  <td data-translate="no">No</td>
-                                  <td data-translate="yes">Yes</td>
-                                  <td data-translate="yes">Yes</td>
-                                  <td data-translate="yes">Yes</td>
-                              </tr>
-                              <tr>
-                                  <td>BCC</td>
-                                  <td data-translate="yes">Yes</td>
-                                  <td data-translate="yes">Yes</td>
-                                  <td data-translate="no">No</td>
-                                  <td data-translate="no">No</td>
-                                  <td data-translate="no">No</td>
-                                  <td data-translate="no">No</td>
-                              </tr>
-                              <tr>
-                                  <td data-translate="senderField">Người gửi</td>
-                                  <td data-translate="yes">Yes</td>
-                                  <td data-translate="yes">Yes</td>
-                                  <td data-translate="yes">Yes</td>
-                                  <td data-translate="yes">Yes</td>
-                                  <td data-translate="yes">Yes</td>
-                                  <td data-translate="yes">Yes</td>
-                              </tr>
-                          </table>
-
-                </div>
-                <div class="table_container">
-                  <table>
-                      <tr>
-                          <th data-translate="recipientField">Trường nhận</th>
-                          <th data-translate="seesTo">Thấy "To"</th>
-                          <th data-translate="seesCC">Thấy "CC"</th>
-                          <th data-translate="seesBCC">Thấy "BCC"</th>
-                          <th data-translate="seenByTo">Thấy bởi "To"</th>
-                          <th data-translate="seenByCC">Thấy bởi "CC"</th>
-                          <th data-translate="seenByBCC">Thấy bởi "BCC"</th>
-                      </tr>
-                      <tr>
-                          <td>To</td>
-                          <td data-translate="yes">Yes</td>
-                          <td data-translate="yes">Yes</td>
-                          <td data-translate="no">No</td>
-                          <td data-translate="yes">Yes</td>
-                          <td data-translate="yes">Yes</td>
-                          <td data-translate="yes">Yes</td>
-                      </tr>
-                      <tr>
-                          <td>CC</td>
-                          <td data-translate="yes">Yes</td>
-                          <td data-translate="yes">Yes</td>
-                          <td data-translate="no">No</td>
-                          <td data-translate="yes">Yes</td>
-                          <td data-translate="yes">Yes</td>
-                          <td data-translate="yes">Yes</td>
-                      </tr>
-                      <tr>
-                          <td>BCC</td>
-                          <td data-translate="yes">Yes</td>
-                          <td data-translate="yes">Yes</td>
-                          <td data-translate="no">No</td>
-                          <td data-translate="no">No</td>
-                          <td data-translate="no">No</td>
-                          <td data-translate="no">No</td>
-                      </tr>
-                      <tr>
-                          <td data-translate="senderField">Người gửi</td>
-                          <td data-translate="yes">Yes</td>
-                          <td data-translate="yes">Yes</td>
-                          <td data-translate="yes">Yes</td>
-                          <td data-translate="yes">Yes</td>
-                          <td data-translate="yes">Yes</td>
-                          <td data-translate="yes">Yes</td>
-                      </tr>
-                  </table>
-
-              </div>
-
-
-
-                <div class="catalog">
-                    <p style="font-size: 20px;font-weight: bold;margin: 0;" data-translate="TableOfContents">
-                        On this page</p>
-                    <hr>
-                    <ul>
-                        <li><a href="#section1" data-translate="emailDifferencesTitle"></a></li>
-                        <li><a href="#section2" data-translate="whenToUseCCBCC"></a></li>
-                        <li><a href="#section3" data-translate="summaryTitle"></a></li>
-                    </ul>
-                </div>
-            </main>
-
-        </div>
-        <div id="footer"></div>
-    </div>
-    <script src="js/load-compoments.js"></script>
-    <script src="js/functions.js"></script>
-    <script src="js/translate.js"></script>
-    <script src="js/scroll-spy.js"></script>
+            // Gọi API từ DongA Bank
+            fetch('https://www.dongabank.com.vn/exchange/export')
+                .then(response => response.json())
+                .then(data => {
+                    // Xử lý dữ liệu và hiển thị
+                    data.items.forEach(item => {
+                        const currencyDiv = document.createElement('div');
+                        currencyDiv.classList.add('currency');
+                        currencyDiv.innerHTML = `
+                            <img src="${item.imageurl}" alt="${item.type}">
+                            <p><strong>${item.type}</strong></p>
+                            <p>Mua tiền mặt: ${item.muatienmat}</p>
+                            <p>Mua CK: ${item.muack}</p>
+                            <p>Bán tiền mặt: ${item.bantienmat}</p>
+                            <p>Bán CK: ${item.banck}</p>
+                        `;
+                        exchangeRateContainer.appendChild(currencyDiv);
+                    });
+                })
+                .catch(error => {
+                    console.error('Lỗi khi lấy dữ liệu từ API:', error);
+                    exchangeRateContainer.innerHTML = '<p>Không thể tải tỷ giá hối đoái. Vui lòng thử lại sau.</p>';
+                });
+        });
+    </script>
 </body>
-
 </html>

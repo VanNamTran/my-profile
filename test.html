@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xác suất trò chơi bầu cua</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    h2 {
+      color: #2c3e50;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 20px;
+    }
+    .formula {
+      background-color: rgb(199, 245, 253);
+      padding: 10px;
+      border-radius: 5px;
+      display: block;
+      margin-top: 10px;
+      word-wrap: normal; /* Ngăn cản xuống dòng */
+      overflow-x: auto; /* Thêm thanh cuộn ngang */
+      white-space: nowrap; /* Đảm bảo nội dung không xuống dòng */
+    }
+    p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <h2>Xác suất trò chơi bầu cua</h2>
+  <ul>
+    <li>
+      <p>Với mỗi viên xúc xắc, xác suất không xuất hiện mặt đặt cược là:</p>
+      <div class="formula">\( \frac{5}{6} \)</div>
+    </li>
+    <li>
+      <p>Với 3 viên xúc xắc, xác suất không trúng cả 3 viên là:</p>
+      <div class="formula">\( P(\text{không trúng}) = \left(\frac{5}{6}\right)^3 = \frac{125}{216} \approx 57.87\% \)</div>
+    </li>
+    <li>
+      <p>Xác suất trúng ít nhất một lần là:</p>
+      <div class="formula">\( P(\text{trúng}) = 1 - P(\text{không trúng}) = 1 - \frac{125}{216} = \frac{91}{216} \approx 42.13\% \)</div>
+    </li>
+  </ul>
+</body>
+</html>
