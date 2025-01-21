@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="VN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Bầu Cua</title>
+  <link rel="stylesheet" href="css/game.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <a href="choi_bau_cua.html" class="back-btn" title="Quay lại">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="arrow-icon">
+          <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z" fill="#FFFFFF"/>
+          <path d="M0 0h24v24H0z" fill="none"/>
+        </svg>
+      </a>
+      
+      <h1 class="name-game">Game Bầu Cua</h1>
+    </div>
+    
+    <div class="coin-display"><span id="coin-count">100</span><img src="images/coin.png" class="coinlogo" alt=""></div>
+    <div class="bet-board">
+      <div class="bet-option" data-option="ga">
+        <div class="bet-controls">
+          <button onclick="updateBet('ga', -1)">-</button>
+          <span id="ga-bet">0</span>
+          <button onclick="updateBet('ga', 1)">+</button>
+        </div>
+        <div class="message-container" id="ga-message-container"></div>
+      </div>
+      <div class="bet-option" data-option="cua">
+        <div class="bet-controls">
+          <button onclick="updateBet('cua', -1)">-</button>
+          <span id="cua-bet">0</span>
+          <button onclick="updateBet('cua', 1)">+</button>
+        </div>
+        <div class="message-container" id="cua-message-container"></div>
+      </div>
+      <div class="bet-option" data-option="tom">
+        <div class="bet-controls">
+          <button onclick="updateBet('tom', -1)">-</button>
+          <span id="tom-bet">0</span>
+          <button onclick="updateBet('tom', 1)">+</button>
+        </div>
+        <div class="message-container" id="tom-message-container"></div>
+      </div>
+      <div class="bet-option" data-option="ca">
+        <div class="bet-controls">
+          <button onclick="updateBet('ca', -1)">-</button>
+          <span id="ca-bet">0</span>
+          <button onclick="updateBet('ca', 1)">+</button>
+        </div>
+        <div class="message-container" id="ca-message-container"></div>
+      </div>
+      <div class="bet-option" data-option="nai">
+        <div class="bet-controls">
+          <button onclick="updateBet('nai', -1)">-</button>
+          <span id="nai-bet">0</span>
+          <button onclick="updateBet('nai', 1)">+</button>
+        </div>
+        <div class="message-container" id="nai-message-container"></div>
+      </div>
+      <div class="bet-option" data-option="bau">
+        <div class="bet-controls">
+          <button onclick="updateBet('bau', -1)">-</button>
+          <span id="bau-bet">0</span>
+          <button onclick="updateBet('bau', 1)">+</button>
+        </div>
+        <div class="message-container" id="bau-message-container"></div>
+      </div>
+    </div>
+    
+      <div class="dice-container" id="modal-dice-container">
+        <div class="dice" id="modal-dice1"></div>
+        <div class="dice" id="modal-dice2"></div>
+        <div class="dice" id="modal-dice3"></div>
+      </div>
+    <button id="roll-btn">Tung Xúc Xắc</button>
+    <button id="reset-bet" onclick="resetBet()">Reset Cược</button>
+  </div>
+  <script src="js/script-game.js"></script>
+</body>
+</html>
