@@ -136,9 +136,9 @@ const diceFaces = [
     
     
     
-    function calculateResult(diceResults) {
+     function calculateResult(diceResults) {
       const faceNames = ["bau", "cua", "tom", "ca", "ga", "nai"];
-    
+      
       // Đếm số lần xuất hiện của mỗi mặt
       const resultCount = {
         ga: 0,
@@ -148,37 +148,44 @@ const diceFaces = [
         nai: 0,
         bau: 0
       };
-    
+      
       // Cập nhật số lần xuất hiện dựa trên kết quả tung
       diceResults.forEach(result => {
-        const faceName = faceNames[result]; 
+        const faceName = faceNames[result];
         resultCount[faceName]++;
       });
     
-      let totalWin = 0;
-      let totalLoss = 0;
+      let totalReceived = 0; 
+      let totalBet = 0; 
+    
       for (const face in bets) {
         if (bets[face] > 0) {
+          totalBet += bets[face]; 
     
-          totalWin += bets[face] * resultCount[face];
-          totalLoss += bets[face] * (1 - resultCount[face]);
-          const messageContainer = document.getElementById(face + "-message-container");
           if (resultCount[face] > 0) {
-            const betElement = document.getElementById(face + "-bet"); 
-            createBubbleMessage(messageContainer, `+${totalWin }`, 'win');
+            const winAmount = bets[face] * resultCount[face];
+            const receivedAmount = bets[face] + winAmount; 
+            totalReceived += receivedAmount;
+            const messageContainer = document.getElementById(face + "-message-container");
+            createBubbleMessage(messageContainer, `+${receivedAmount}`, 'win');
+            const betElement = document.getElementById(face + "-bet");
             createFlyingCoin(betElement);
-          }else if (totalLoss > 0) {
-            createBubbleMessage(messageContainer, `-${totalLoss}`, 'loss');
+          } else {
+            const messageContainer = document.getElementById(face + "-message-container");
+            createBubbleMessage(messageContainer, `-${bets[face]}`, 'loss');
           }
-          
-          console.log("Trừ:", bets[face] * (1 - resultCount[face])); 
-          console.log("Tổng thua:", totalLoss);
         }
       }
-      userCoins += totalWin - totalLoss;;
+    
+      const totalLoss = totalBet - totalReceived; // Tổng lỗ = Tổng cược - Tổng nhận lại
+      userCoins += totalReceived - totalBet; // Cập nhật số xu của người chơi
+    
+      // Cập nhật giao diện
       updateCoinDisplay();
-      resetBet()
+      resetBet();
     }
+    
+    
     
     function createBubbleMessage(element, message, type) {
       const bubble = document.createElement("div");
