@@ -20,14 +20,18 @@ const diceFaces = [
       { x: 90, y: 0 }       // Bottom (bau)
     ];
     
-    
+    let isRolling = false;
     function rollDice() {
       const diceElements = document.querySelectorAll(".dice");
       const rollButton = document.querySelector("#roll-btn");
+      const rollDiceSound = document.getElementById('rollDiceSound');
       rollButton.disabled = true;
+      isRolling = true;
       const diceResults = []; 
       let completedDice = 0;  // Biến đếm số xúc xắc đã quay xong
-    
+      rollDiceSound.currentTime = 0; 
+      rollDiceSound.volume = 0.5;
+      rollDiceSound.play();
       diceElements.forEach(dice => {
         // Xác định mặt kết quả ngẫu nhiên
         const resultFace = Math.floor(Math.random() * 6); 
@@ -52,10 +56,11 @@ const diceFaces = [
     
           // Kiểm tra xem tất cả các xúc xắc đã quay xong chưa
           if (completedDice === diceElements.length) {
-            rollButton.disabled = false; // Kích hoạt lại nút quay
-            calculateResult(diceResults); // Tính kết quả sau khi tất cả đã hoàn tất
+            rollButton.disabled = false; 
+            isRolling = false;
+            calculateResult(diceResults); 
           }
-        }, { once: true });  // Chỉ xử lý sự kiện này một lần
+        }, { once: true }); 
       });
     }
     
@@ -100,6 +105,7 @@ const diceFaces = [
     
     // Hàm điều chỉnh cược
     function updateBet(option, delta) {
+      if (isRolling) return;
       const currentBet = bets[option];
       const newBet = currentBet + delta;
     
@@ -224,4 +230,27 @@ const diceFaces = [
         coin.remove();
       });
     }
-    
+/* ------------------- Music -------------------*/
+const backgroundMusic = document.getElementById('backgroundMusic');
+
+const playlist = [
+  './data/audio/game-music-loop-10-145572.mp3',
+  './data/audio/game-music-loop-1-143979.mp3',
+  './data/audio/game-music-loop-6-144641.mp3',
+
+];
+
+let currentSongIndex = 0;
+function playMusic() {
+  backgroundMusic.src = playlist[currentSongIndex];
+  backgroundMusic.volume=0.3
+  backgroundMusic.play();
+}
+backgroundMusic.addEventListener('ended', () => {
+  currentSongIndex++; 
+  if (currentSongIndex >= playlist.length) {
+    currentSongIndex = 0; 
+  }
+  setTimeout(playMusic, 3000);
+});
+playMusic();
