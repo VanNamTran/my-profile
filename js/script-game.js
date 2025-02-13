@@ -237,7 +237,6 @@ const playlist = [
   './data/audio/game-music-loop-10-145572.mp3',
   './data/audio/game-music-loop-1-143979.mp3',
   './data/audio/game-music-loop-6-144641.mp3',
-
 ];
 
 let currentSongIndex = 0;
