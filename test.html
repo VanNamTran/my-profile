@@ -1,59 +1,99 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Xác suất trò chơi bầu cua</title>
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      padding: 20px;
-      background-color: #f9f9f9;
-    }
-    h2 {
-      color: #2c3e50;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    li {
-      margin-bottom: 20px;
-    }
-    .formula {
-      background-color: rgb(199, 245, 253);
-      padding: 10px;
-      border-radius: 5px;
-      display: block;
-      margin-top: 10px;
-      word-wrap: normal; /* Ngăn cản xuống dòng */
-      overflow-x: auto; /* Thêm thanh cuộn ngang */
-      white-space: nowrap; /* Đảm bảo nội dung không xuống dòng */
-    }
-    p {
-      margin: 0;
-    }
-  </style>
-</head>
-<body>
-  <h2>Xác suất trò chơi bầu cua</h2>
-  <ul>
-    <li>
-      <p>Với mỗi viên xúc xắc, xác suất không xuất hiện mặt đặt cược là:</p>
-      <div class="formula">\( \frac{5}{6} \)</div>
-    </li>
-    <li>
-      <p>Với 3 viên xúc xắc, xác suất không trúng cả 3 viên là:</p>
-      <div class="formula">\( P(\text{không trúng}) = \left(\frac{5}{6}\right)^3 = \frac{125}{216} \approx 57.87\% \)</div>
-    </li>
-    <li>
-      <p>Xác suất trúng ít nhất một lần là:</p>
-      <div class="formula">\( P(\text{trúng}) = 1 - P(\text{không trúng}) = 1 - \frac{125}{216} = \frac{91}{216} \approx 42.13\% \)</div>
-    </li>
-  </ul>
-  <audio id="rollDiceSound" src="roll-dice-sound.mp3"></audio>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Form Liên Hệ</title>
+    <style>
+      label {
+        display: inline-block;
+        width: 100px;
+        vertical-align: top;
+      }
 
-</body>
+      .form-group {
+        margin-bottom: 10px;
+        display: flex;
+        align-content: center;
+        align-items: center;
+      }
+
+     
+    </style>
+  </head>
+
+  <body>
+    <h2>Liên hệ</h2>
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="name">Họ và tên</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="nhập họ và tên của em"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="nhập địa chỉ email của em"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Số điện thoại</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="nhập số điện thoại của em"
+        />
+      </div>
+
+      <div class="form-group">
+        <label>Sở thích</label>
+        <div class="hobby-group">
+          <div>
+            <input type="radio" id="swimming" name="hobby" value="Bơi" />
+            <label for="swimming">Bơi</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="football"
+              name="hobby"
+              value="Đá bóng"
+              checked
+            />
+            <label for="football">Đá bóng</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="volleyball"
+              name="hobby"
+              value="Bóng chuyền"
+            />
+            <label for="volleyball">Bóng chuyền</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Nội dung</label>
+        <textarea id="message" name="message" rows="4" cols="30">
+Lớp 12
+thực hành form</textarea
+        >
+      </div>
+
+      <div class="form-group">
+        <button type="submit">Gửi</button>
+      </div>
+    </form>
+  </body>
 </html>
